@@ -101,42 +101,33 @@
 		/* =====================================
 		   Logo Styling
 		===================================== */
+		.brand-logo-nav{
+		    width:120px;
+		    height:auto;
+		    display:block;
+		    object-fit:contain;
+		    transition:.35s;
+		    filter:drop-shadow(0 0 12px rgba(191,149,63,.25));
+		    animation:logoGlow 4s ease-in-out infinite;
+		}
+
+		@media(min-width:640px){
 
 		.brand-logo-nav{
 
-		    display:block;
-
-		    width:220px;
-
-		    height:auto;
-
-		    object-fit:contain;
-
-		    transition:.3s ease;
+		width:170px;
 
 		}
 
-		/* Tablet */
-
-		@media (min-width:768px){
-
-		    .brand-logo-nav{
-
-		        width:320px;
-
-		    }
-
 		}
 
-		/* Desktop */
+		@media(min-width:1024px){
 
-		@media (min-width:1024px){
+		.brand-logo-nav{
 
-		    .brand-logo-nav{
+		width:230px;
 
-		        width:550px;
-
-		    }
+		}
 
 		}
 /* 1. Added the missing CSS Class Selector */
@@ -161,21 +152,7 @@
             filter: drop-shadow(0 0 16px rgba(191,149,63,0.35));
             transform: translateY(1px);
         }
-        .brand-logo-footer{
-
-    width:220px;
-
-    height:auto;
-
-    display:block;
-
-    margin:auto;
-
-    opacity:.9;
-
-    filter:drop-shadow(0 0 8px rgba(255,255,255,.10));
-
-}
+    
     
 /* Premium motion CSS: insert CSS provided earlier here. */
 /* ==========================================
@@ -372,34 +349,28 @@ nav::after{
 
 	<div class="w-full bg-zinc-950 border-b border-zinc-900 relative z-50">
 
-	    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+	    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2">
 
-	        <div class="flex flex-col lg:flex-row items-center justify-between w-full">
+	        <div class="flex flex-col lg:flex-row items-center justify-between">
 
-	            <!-- Left Side -->
+	            <!-- Left -->
 
-	            <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-[11px] tracking-widest text-zinc-400">
-
-	                <!-- Location -->
+	            <div class="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-start gap-x-3 gap-y-1 text-[9px] sm:text-[10px] lg:text-[11px] tracking-wide text-zinc-400">
 
 	                <span class="flex items-center whitespace-nowrap">
 
-	                    <i class="fa-solid fa-location-dot text-[#bf953f] mr-2"></i>
+	                    <i class="fa-solid fa-location-dot text-[#bf953f] mr-1"></i>
 
-	                    Hyderabad • Bengaluru • Chennai • Nellore • Vizag
+	                    Hyderabad • Bengaluru
 
 	                </span>
 
-	                <!-- Divider -->
-
 	                <span class="hidden lg:block text-zinc-700">|</span>
 
-	                <!-- Email -->
-
 	                <a href="mailto:keyframesmedia6660@gmail.com"
-	                   class="flex items-center whitespace-nowrap hover:text-white transition-all duration-300">
+	                   class="flex items-center whitespace-nowrap hover:text-white transition">
 
-	                    <i class="fa-solid fa-envelope text-[#bf953f] mr-2"></i>
+	                    <i class="fa-solid fa-envelope text-[#bf953f] mr-1"></i>
 
 	                    keyframesmedia6660@gmail.com
 
@@ -407,16 +378,16 @@ nav::after{
 
 	            </div>
 
-	            <!-- Right Side -->
+	            <!-- Right -->
 
-	            <div class="mt-2 lg:mt-0">
+	            <div class="mt-1 lg:mt-0">
 
 	                <a href="tel:+910000000000"
-	                   class="flex items-center whitespace-nowrap text-[11px] tracking-widest font-medium text-zinc-300 hover:text-white transition-all duration-300">
+	                   class="flex items-center whitespace-nowrap text-[9px] sm:text-[10px] lg:text-[11px] tracking-wide text-zinc-300 hover:text-white transition">
 
-	                    <i class="fa-solid fa-phone text-[#bf953f] mr-2"></i>
+	                    <i class="fa-solid fa-phone text-[#bf953f] mr-1"></i>
 
-	                    CALL : +91 00000 00000
+	                    +91 00000 00000
 
 	                </a>
 
@@ -441,32 +412,25 @@ nav::after{
 
 	   
 	     
-<div class="max-w-7xl mx-auto h-16 lg:h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between">         <div class="flex items-center justify-start flex-shrink-0 group cursor-pointer pt-2 lg:-ml-6">
+<div class="max-w-7xl mx-auto h-16 lg:h-20 px-3 sm:px-6 lg:px-8 flex items-center justify-between gap-2">
+	      <div class="flex items-center justify-start flex-shrink-0 group cursor-pointer pt-2 lg:-ml-10">
                 <!-- Branding Logo -->
                 
 				<img
 				src="logo.png"
 				alt="Key Frames Media Logo"
-				class="brand-logo-nav"
-				style="
-				width:270px;
-				height:auto;
-				object-fit:contain;
-				margin-top:10px;
-				filter:drop-shadow(0 0 12px rgba(191,149,63,.25));
-				animation:logoGlow 4s ease-in-out infinite;
-				">      </div>
+				class="brand-logo-nav premium-logo">     </div>
 <div class="hidden lg:flex items-center gap-5 xl:gap-6 text-[14px] font-medium">                <a href="#retainers" class="hover:text-[#bf953f] transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-[#bf953f] hover:after:w-full after:transition-all">Production Plans</a>
                 <a href="#freelance" class="hover:text-[#bf953f] transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-[#bf953f] hover:after:w-full after:transition-all">Per-Day Schedules</a>
                 <a href="#why-choose-us" class="hover:text-[#bf953f] transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-[#bf953f] hover:after:w-full after:transition-all">Why Choose Us</a>
                 <a href="#addons" class="hover:text-[#bf953f] transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-[#bf953f] hover:after:w-full after:transition-all">Add-ons</a>
                 <a href="#policies" class="hover:text-[#bf953f] transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-[#bf953f] hover:after:w-full after:transition-all">Policies</a>
             </div>
-            <div class="flex items-center gap-2">
-                <a href="#contact" class="hidden sm:inline-block border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-600 px-5 py-2.5 rounded text-xs tracking-wider uppercase transition-all">
+           <div class="flex items-center gap-2 flex-shrink-0">
+                <a href="#contact" class="inline-block border border-zinc-800 px-3 sm:px-5 py-2 text-[10px] sm:text-xs">
                     Get Proposal
                 </a>
-                <a href="#retainers" class="shimmer-btn bg-gradient-to-r from-[#bf953f] to-[#aa771c] text-black px-5 py-2.5 rounded text-xs font-semibold tracking-wider uppercase transition-all duration-300 hover:opacity-90">
+                <a href="#retainers" class="shimmer-btn bg-gradient-to-r from-[#bf953f] to-[#aa771c] text-black px-3 sm:px-5 py-2 text-[10px] sm:text-xs rounded text-xs font-semibold tracking-wider uppercase transition-all duration-300 hover:opacity-90">
                     View Pricing
                 </a>
             </div>
@@ -485,7 +449,7 @@ nav::after{
 		   display:flex;
 		   justify-content:center;
 		   align-items:center;
-		   margin:-35px auto -25px;
+		   margin:10px auto -10px;
 		   width:100%;
 		   overflow:visible;
 		   ">
@@ -537,26 +501,20 @@ nav::after{
 
 	<!-- Center Hero Logo -->
 
+	<!-- Center Hero Logo -->
+
 	<img
 	    src="logo.png"
 	    alt="Key Frames Media Logo"
-	    class="brand-logo-hero"
+	    class="premium-logo"
 	    style="
-	        width:500px;
-	        max-width:90%;
+	        width:400px;
 	        height:auto;
-	        display:block;
-	        margin:auto;
-	        position:relative;
-	        z-index:5;
-	        filter:
-	            drop-shadow(0 0 15px rgba(191,149,63,.30))
-	            drop-shadow(0 0 30px rgba(247,214,118,.15));
+	        object-fit:contain;
 	        animation:
-	            logoFloat 2.5s ease-in-out infinite,
-	            logoGlow 3s ease-in-out infinite;
-	">
-
+	            logoFloat 3s ease-in-out infinite,
+	            logoGlow 4s ease-in-out infinite;
+	    ">
     <!-- Lens Flare -->
 
     <div style="
@@ -726,7 +684,7 @@ opacity:0;
 
 </style>
             
-<h1 class="serif-title text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] -mt-10 sm:-mt-12 lg:-mt-14">
+<h1 class="serif-title text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] -mt-10 sm:-mt-12 lg:-mt-14">
     Elevate Your Brand With <br>
 	<span class="gold-gradient-text cinematic-text">
 	    Cinematic Authority
@@ -1531,62 +1489,42 @@ opacity:0;
      IMPORTANT PRODUCTION NOTE
 ========================================== -->
 
-<div class="w-full mt-16 mb-12 border-t border-zinc-800 pt-8">
+<div class="w-full mt-2 mb-1 border-t border-zinc-800 pt-1">
 
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
-        <!-- Heading -->
+		<!-- Heading -->
 
-        <div class="flex items-center gap-3 mb-5">
+		<div class="flex items-center gap-1 mb-1">
 
-            <i class="fa-solid fa-circle-info text-[#bf953f] text-sm lg:text-base"></i>
+		    <i class="fa-solid fa-circle-info text-[#bf953f] text-sm lg:text-base"></i>
 
-            <h3 class="text-[#bf953f] text-xs sm:text-sm font-semibold uppercase tracking-[4px] whitespace-nowrap">
-                Important Production Note
-            </h3>
+		    <h3 class="text-[#f7d676] text-sm font-bold uppercase tracking-[5px] whitespace-nowrap">
 
-            <div class="flex-1 h-px bg-zinc-800"></div>
+		        IMPORTANT PRODUCTION NOTE
 
-        </div>
+		    </h3>
 
-        <!-- Note -->
+		    <div class="flex-1 h-px bg-zinc-800"></div>
 
-        <p class="text-zinc-400 text-[10px] sm:text-[9px] lg:text-[10px] leading-8">
+		</div>
 
-            All
-            <span class="text-white font-semibold">PHASES</span>
-            include only
-            <span class="text-white font-semibold">
-                video production and final delivery.
-            </span>
+		<!-- Note -->
 
-            Services including
-            <span class="text-white font-semibold">
-                Publicity, Paid Advertisements, Channel Management,
-                Website Development
-            </span>
-            and
-            <span class="text-white font-semibold">
-                Social Media Handling
-            </span>
-            are
-            <span class="text-white font-semibold">
-                NOT INCLUDED
-            </span>
-            in these packages.
+		<p class="text-zinc-300 text-[10px] leading-7 font-normal">
 
-            These services are available separately under the
-            <span class="text-white font-semibold">
-                ADD-ON SERVICES
-            </span>
-            section.
+		    All PHASES include only video production and final delivery.
+		    Services including Publicity, Paid Advertisements, Channel Management,
+		    Website Development, and Social Media Handling are NOT INCLUDED in
+		    these packages.
 
-        </p>
+		    These services are available separately under the ADD-ON SERVICES section.
 
-    </div>
+		</p>
 
-</div>
+		</div>
 
+		</div>
 <style>
 
 /* Optional - makes the paragraph use the full width on desktop */
@@ -1604,7 +1542,7 @@ opacity:0;
 
 .important-note{
 
-    position:relative;
+    position:inherit;
     overflow:hidden;
 
     margin-top:32px;
@@ -1635,7 +1573,7 @@ opacity:0;
 
     align-items:center;
 
-    gap:12px;
+    gap:9px;
 
 }
 
@@ -1661,7 +1599,7 @@ opacity:0;
 
     color:#111;
 
-    font-size:14px;
+    font-size:40px;
 
     box-shadow:0 0 10px rgba(191,149,63,.25);
 
@@ -1693,7 +1631,7 @@ opacity:0;
 
     color:#bcbcbc;
 
-    font-size:12px;
+    font-size:7px;
 
     line-height:1.65;
 
@@ -4091,7 +4029,7 @@ opacity:.65;
 CUSTOM QUOTE SECTION
 =========================== -->
 
-<section id="quote" class="py-24 px-6 border-t border-zinc-900 relative overflow-hidden">
+<section id="quote" class="py-6 px-2 border-t border-zinc-900 relative overflow-hidden">
 
     <!-- Background Glow -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-[#bf953f]/5 blur-[140px] pointer-events-none"></div>
@@ -4118,7 +4056,7 @@ CUSTOM QUOTE SECTION
 
         </div>
 
-        <div class="premium-card rounded-3xl p-8 md:p-10">
+        <div class="premium-card rounded-none md:rounded-3xl p-8 md:p-10 w-full">
 
             <form class="grid md:grid-cols-2 gap-6">
 
@@ -4244,35 +4182,53 @@ CUSTOM QUOTE SECTION
     </div>
 
 </section>
-<!-- Footer Block -->
-<footer class="bg-zinc-950 border-t border-zinc-900 py-12 text-center text-xs text-zinc-600">
+<!-- =========================
+        Premium Footer
+========================= -->
 
-    <div class="max-w-7xl mx-auto px-8 space-y-4">
+<!-- ================= FOOTER ================= -->
 
-        <!-- Footer Logo -->
+<footer class="bg-zinc-950 border-t border-zinc-900 py-2">
 
-        <div class="flex items-center justify-center mb-8">
+<div class="max-w-5xl mx-auto px-6 py-2 text-center flex flex-col items-center">
 
-            <img src="logo.png"
-                alt="Key Frames Media Footer Logo"
-                class="brand-logo-footer">
+        <!-- Logo -->
 
-        </div>
+        <img
+            src="logo.png"
+            alt="Key Frames Media Logo"
+            class="brand-logo-footer">
 
-        <!-- Footer Heading -->
+        <!-- Company -->
 
-        <p class="tracking-widest uppercase font-semibold text-zinc-500 text-[9px]">
+        <h3 class="footer-title">
 
             KEY FRAMES MEDIA • VIDEO MARKETING
-            (Hyderabad • Bengaluru • Chennai • Nellore • Vizag)
+
+        </h3>
+
+        <!-- Cities -->
+
+        <p class="footer-cities">
+
+            Hyderabad • Bengaluru • Chennai • Nellore • Vizag
 
         </p>
 
+        <!-- Gold Line -->
+
+        <div class="footer-divider"></div>
+
         <!-- Copyright -->
 
-        <p class="text-zinc-600">
+        <p class="footer-copy">
 
-            © 2026 KEY FRAMES MEDIA. All Rights Reserved.
+            © 2026 <span>KEY FRAMES MEDIA</span>. All Rights Reserved.
+
+        </p>
+
+        <p class="footer-copy2">
+
             Designed with Corporate Aesthetic & Advanced Motion Frameworks.
 
         </p>
@@ -4280,6 +4236,229 @@ CUSTOM QUOTE SECTION
     </div>
 
 </footer>
+
+<style>
+
+/* ==========================
+   Premium Footer Logo
+========================== */
+
+/*======================================
+            FOOTER
+======================================*/
+
+.brand-logo-footer{
+
+    width:250px;
+    max-width:100%;
+    display:block;
+
+    margin:0 auto;
+
+    height:auto;
+
+    object-fit:contain;
+
+    position:relative;
+
+    left:0;
+
+    opacity:1;
+
+    animation:footerGlow 4s ease-in-out infinite;
+
+
+
+    transition:.3s;
+
+    position:relative;
+
+    top:45px;      /* Move logo down */
+
+}
+
+.brand-logo-footer:hover{
+
+    transform:scale(1.20);
+
+}
+
+.footer-title{
+
+    color:#e7e7e7;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:6px;
+    text-transform:uppercase;
+
+    margin-top:0px;
+    margin-bottom:5px;
+    line-height:1.1;
+
+}
+
+.footer-cities{
+
+    color:rgb(192, 192, 192);
+    font-size:9px;
+    letter-spacing:2px;
+    margin-top:0;
+    margin-bottom:8px;
+
+}
+
+.footer-divider{
+
+    width:130px;
+
+    height:2px;
+
+    margin:0 auto 10px;
+
+    background:linear-gradient(to right,
+    transparent,
+    #bf953f,
+    #f7d676,
+    #bf953f,
+    transparent);
+
+}
+
+.footer-copy{
+
+    color:#8b8b8b;
+
+    font-size:10px;
+
+    margin-bottom:6px;
+
+}
+
+.footer-copy span{
+
+    color:rgb(139, 139, 139);
+
+    font-weight:600;
+
+}
+
+.footer-copy2{
+
+    color:#666;
+
+    font-size:10px;
+
+}
+
+/*==========================
+        Logo Glow
+==========================*/
+
+@keyframes footerGlow{
+
+    0%,100%{
+
+        filter:drop-shadow(0 0 8px rgba(191,149,63,.18));
+
+    }
+
+    50%{
+
+        filter:
+        drop-shadow(0 0 18px rgba(191,149,63,.45))
+        drop-shadow(0 0 30px rgba(247,214,118,.18));
+
+    }
+
+}
+
+/*==========================
+        Tablet
+==========================*/
+
+@media(max-width:1024px){
+
+.brand-logo-footer{
+
+width:200px;
+
+}
+
+.footer-title{
+
+font-size:13px;
+
+letter-spacing:5px;
+
+}
+
+.footer-cities{
+
+font-size:13px;
+
+letter-spacing:2px;
+
+}
+
+}
+
+/*==========================
+        Mobile
+==========================*/
+
+@media(max-width:1000px){
+
+.brand-logo-footer{
+
+width:250px;
+
+margin-bottom:-2%;
+
+}
+
+.footer-title{
+
+font-size:11px;
+
+letter-spacing:3px;
+
+line-height:1.8;
+
+}
+
+.footer-cities{
+
+font-size:9px;
+
+letter-spacing:1px;
+
+margin-bottom:2px;
+
+}
+
+.footer-divider{
+
+width:190px;
+
+margin-bottom:10px;
+
+}
+
+.footer-copy{
+
+font-size:8px;
+
+}
+
+.footer-copy2{
+
+font-size:10px;
+
+}
+
+}
+
+</style>
 
         <!-- Footer Text -->
 
