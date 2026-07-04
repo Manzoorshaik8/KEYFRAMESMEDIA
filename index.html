@@ -1,0 +1,4487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEY FRAMES MEDIA | Video Marketing Hyderabad</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts: Inter & Playfair Display for premium look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom Premium Gradients & Glows */
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Cinematic Ambient Motion Graphic Background */
+        .ambient-motion-bg {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(191,149,63,0.06) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: floatAmbient 18s infinite alternate ease-in-out;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .ambient-motion-bg-2 {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(179,135,40,0.04) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(60px);
+            animation: floatAmbientTwo 25s infinite alternate ease-in-out;
+            pointer-events: none;
+            z-index: 1;
+        }
+        @keyframes floatAmbient {
+            0% { transform: translate(-20%, -20%) scale(1); }
+            100% { transform: translate(40%, 30%) scale(1.2); }
+        }
+        @keyframes floatAmbientTwo {
+            0% { transform: translate(30%, 40%) scale(1.1); }
+            100% { transform: translate(-30%, -10%) scale(0.9); }
+        }
+        
+        /* Card Premium Interactive Motion */
+        .premium-card {
+            background: rgba(15, 15, 15, 0.75);
+            backdrop-filter: blur(16px);
+            border: 2px solid rgba(191, 149, 63, 0.12);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .premium-card:hover {
+            transform: translateY(-8px) scale(1.01);
+            border-color: rgba(191, 149, 63, 0.5);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(191, 149, 63, 0.12);
+        }
+        /* Interactive Shimmer Effect for Buttons */
+        .shimmer-btn {
+            position: relative;
+            overflow: hidden;
+        }
+        .shimmer-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 30%;
+            height: 200%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.15), transparent);
+            transform: rotate(30deg);
+            transition: none;
+            animation: buttonShimmer 4s infinite linear;
+        }
+        @keyframes buttonShimmer {
+            0% { left: -60%; }
+            30% { left: 140%; }
+            100% { left: 140%; }
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+		/* =====================================
+		   Logo Styling
+		===================================== */
+		.brand-logo-nav{
+		    width:120px;
+		    height:auto;
+		    display:block;
+		    object-fit:contain;
+		    transition:.35s;
+		    filter:drop-shadow(0 0 12px rgba(191,149,63,.25));
+		    animation:logoGlow 4s ease-in-out infinite;
+		}
+
+		@media(min-width:640px){
+
+		.brand-logo-nav{
+
+		width:170px;
+
+		}
+
+		}
+
+		@media(min-width:1024px){
+
+		.brand-logo-nav{
+
+		width:230px;
+
+		}
+
+		}
+/* 1. Added the missing CSS Class Selector */
+.premium-logo {
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.18));
+    transition: 0.4s ease;
+    animation: logoGlow 4s ease-in-out infinite;
+}
+
+/* 2. Added the MISSING Keyframe Animation rules so 'logoGlow' actually works */
+@keyframes logoGlow {
+    0%, 100% {
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.18));
+    }
+    50% {
+        /* Creates a richer, multi-layered professional glow at the peak of the animation */
+        filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.45)) 
+                drop-shadow(0 0 30px rgba(255, 215, 0, 0.2));
+    }
+}
+        .group:hover .brand-logo-nav {
+            filter: drop-shadow(0 0 16px rgba(191,149,63,0.35));
+            transform: translateY(1px);
+        }
+    
+    
+/* Premium motion CSS: insert CSS provided earlier here. */
+/* ==========================================
+/*==================================================
+    MOVING GLASS REFLECTION - NAVIGATION BAR
+==================================================*/
+
+.group{
+    position:relative;
+    border-radius:3px;
+}
+
+/* Premium Glass Sweep */
+
+nav::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-35%;
+
+    left:-220px;
+
+    width:140px;
+
+    height:220%;
+
+    background:
+    linear-gradient(
+        110deg,
+        transparent 0%,
+        rgba(255,255,255,.02) 25%,
+        rgba(255,255,255,.08) 40%,
+        rgba(255,255,255,.20) 50%,
+        rgba(255,255,255,.08) 60%,
+        rgba(255,255,255,.02) 75%,
+        transparent 100%
+    );
+
+    transform:rotate(18deg);
+
+    filter:blur(12px);
+
+    opacity:.65;
+
+    pointer-events:none;
+
+    animation:glassSweep 10s ease-in-out infinite;
+
+}
+
+@keyframes glassSweep{
+
+    0%{
+
+        left:-220px;
+
+        opacity:0;
+
+    }
+
+    8%{
+
+        opacity:.15;
+
+    }
+
+    18%{
+
+        opacity:.45;
+
+    }
+
+    50%{
+
+        opacity:.65;
+
+    }
+
+    82%{
+
+        opacity:.45;
+
+    }
+
+    92%{
+
+        opacity:.15;
+
+    }
+
+    100%{
+
+        left:115%;
+
+        opacity:0;
+
+    }
+
+}
+
+/* Logo Glow */
+
+@keyframes logoGlow{
+
+    0%,100%{
+
+        filter:
+        drop-shadow(0 0 4px rgba(255,255,255,.06))
+        drop-shadow(0 0 8px rgba(191,149,63,.10));
+
+    }
+
+    50%{
+
+        filter:
+        drop-shadow(0 0 8px rgba(255,255,255,.12))
+        drop-shadow(0 0 14px rgba(191,149,63,.18));
+
+    }
+
+}
+/* ==========================================
+   Premium Smooth Cinematic Stretch
+========================================== */
+
+.cinematic-text{
+
+    display:inline-block;
+
+    transform-origin:center;
+
+    will-change:transform;
+
+    animation:cinematicStretch 8s cubic-bezier(.22,.61,.36,1) infinite;
+
+}
+
+@keyframes cinematicStretch{
+
+    0%{
+
+        transform:scaleX(1) scaleY(1);
+
+    }
+
+    20%{
+
+        transform:scaleX(1) scaleY(1);
+
+    }
+
+    45%{
+
+        transform:scaleX(1.025) scaleY(.995);
+
+    }
+
+    55%{
+
+        transform:scaleX(1.035) scaleY(.99);
+
+    }
+
+    70%{
+
+        transform:scaleX(1.02) scaleY(.995);
+
+    }
+
+    85%{
+
+        transform:scaleX(1.01) scaleY(1);
+
+    }
+
+    100%{
+
+        transform:scaleX(1) scaleY(1);
+
+    }
+
+}
+</style>
+
+</head>
+<body class="antialiased selection:bg-[#bf953f] selection:text-black">
+
+<!-- =========================
+	<!-- ==========================================
+	     Premium Top Information Strip
+	========================================== -->
+
+	<div class="w-full bg-zinc-950 border-b border-zinc-900 relative z-50">
+
+	    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2">
+
+	        <div class="flex flex-col lg:flex-row items-center justify-between">
+
+	            <!-- Left -->
+
+	            <div class="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-start gap-x-3 gap-y-1 text-[9px] sm:text-[10px] lg:text-[11px] tracking-wide text-zinc-400">
+
+	                <span class="flex items-center whitespace-nowrap">
+
+	                    <i class="fa-solid fa-location-dot text-[#bf953f] mr-1"></i>
+
+	                    Hyderabad • Bengaluru • Vizag • Chennai •Nellore
+
+	                </span>
+
+	                <span class="hidden lg:block text-zinc-700">|</span>
+
+	                <a href="mailto:keyframesmedia6660@gmail.com"
+	                   class="flex items-center whitespace-nowrap hover:text-white transition">
+
+	                    <i class="fa-solid fa-envelope text-[#bf953f] mr-1"></i>
+
+	                    keyframesmedia6660@gmail.com
+
+	                </a>
+
+	            </div>
+
+	            <!-- Right -->
+
+	            <div class="mt-1 lg:mt-0">
+
+	                <a href="tel:+910000000000"
+	                   class="flex items-center whitespace-nowrap text-[9px] sm:text-[10px] lg:text-[11px] tracking-wide text-zinc-300 hover:text-white transition">
+
+	                    <i class="fa-solid fa-phone text-[#bf953f] mr-1"></i>
+
+	                    +91 00000 00000
+
+	                </a>
+
+	            </div>
+
+	        </div>
+
+	    </div>
+
+	</div>
+
+    <!-- Main Navigation Bar -->
+<nav class="sticky top-0 z-50 relative overflow-hidden bg-[#050505]/90 backdrop-blur-xl border-b border-zinc-900 shadow-lg">	<!-- Luxury Navigation Shine -->
+
+	<div class="absolute inset-0 pointer-events-none overflow-hidden">
+
+	    <div class="nav-shine-1"></div>
+
+	    <div class="nav-shine-2"></div>
+
+	</div>
+
+	   
+	     
+<div class="max-w-7xl mx-auto h-16 lg:h-20 px-3 sm:px-6 lg:px-8 flex items-center justify-between gap-2">
+	      <div class="flex items-center justify-start flex-shrink-0 group cursor-pointer pt-2 lg:-ml-10">
+                <!-- Branding Logo -->
+                
+				<img
+				src="logo.png"
+				alt="Key Frames Media Logo"
+				class="brand-logo-nav premium-logo">     </div>
+<div class="hidden lg:flex items-center gap-5 xl:gap-6 text-[14px] font-medium">                <a href="#retainers" class="hover:text-[#bf953f] transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-[#bf953f] hover:after:w-full after:transition-all">Production Plans</a>
+                <a href="#freelance" class="hover:text-[#bf953f] transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-[#bf953f] hover:after:w-full after:transition-all">Per-Day Schedules</a>
+                <a href="#why-choose-us" class="hover:text-[#bf953f] transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-[#bf953f] hover:after:w-full after:transition-all">Why Choose Us</a>
+                <a href="#addons" class="hover:text-[#bf953f] transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-[#bf953f] hover:after:w-full after:transition-all">Add-ons</a>
+                <a href="#policies" class="hover:text-[#bf953f] transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-[#bf953f] hover:after:w-full after:transition-all">Policies</a>
+            </div>
+           <div class="flex items-center gap-2 flex-shrink-0">
+                <a href="#contact" class="inline-block border border-zinc-800 px-3 sm:px-5 py-2 text-[10px] sm:text-xs">
+                    Get Proposal
+                </a>
+                <a href="#retainers" class="shimmer-btn bg-gradient-to-r from-[#bf953f] to-[#aa771c] text-black px-3 sm:px-5 py-2 text-[10px] sm:text-xs rounded text-xs font-semibold tracking-wider uppercase transition-all duration-300 hover:opacity-90">
+                    View Pricing
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Motion Backgrounds -->
+<header class="relative overflow-hidden pt-0 pb-16 sm:pt-2 sm:pb-18 lg:pt-4 lg:pb-20 border-b border-zinc-900 bg-black">     
+	<div class="ambient-motion-bg top-[-10%] right-[-10%]"></div>
+        <div class="ambient-motion-bg-2 bottom-[20%] left-[-10%]"></div>
+        
+<div class="w-full max-w-[1700px] mx-auto px-6 text-center relative z-10 space-y-1">
+           <!-- PREMIUM CINEMATIC LOGO -->
+		   <div style="
+		   position:relative;
+		   display:flex;
+		   justify-content:center;
+		   align-items:center;
+		   margin:10px auto -10px;
+		   width:100%;
+		   overflow:visible;
+		   ">
+
+    <!-- Ambient Gold Glow -->
+
+    <div style="
+    position:absolute;
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    background:radial-gradient(circle,
+    rgba(191,149,63,.18),
+    transparent 72%);
+    filter:blur(55px);
+    animation:ambientPulse 7s ease-in-out infinite;
+    ">
+    </div>
+
+    <!-- Vertical Light Rays -->
+
+    <div style="
+    position:absolute;
+    width:12px;
+    height:170px;
+    background:linear-gradient(to top,
+    rgba(191,149,63,.45),
+    transparent);
+    left:48%;
+    bottom:-45px;
+    filter:blur(8px);
+    transform:rotate(-8deg);
+    animation:ray1 6s ease-in-out infinite;
+    "></div>
+
+    <div style="
+    position:absolute;
+    width:10px;
+    height:160px;
+    background:linear-gradient(to top,
+    rgba(247,214,118,.40),
+    transparent);
+    left:53%;
+    bottom:-40px;
+    filter:blur(8px);
+    transform:rotate(10deg);
+    animation:ray2 6s ease-in-out infinite;
+    "></div>
+
+	<!-- Center Hero Logo -->
+
+	<!-- Center Hero Logo -->
+
+	<img
+	    src="logo.png"
+	    alt="Key Frames Media Logo"
+	    class="premium-logo"
+	    style="
+	        width:400px;
+	        height:auto;
+	        object-fit:contain;
+	        animation:
+	            logoFloat 3s ease-in-out infinite,
+	            logoGlow 4s ease-in-out infinite;
+	    ">
+    <!-- Lens Flare -->
+
+    <div style="
+    position:absolute;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:
+    radial-gradient(circle,
+    rgba(255,255,255,.65),
+    rgba(247,214,118,.35),
+    transparent 75%);
+    filter:blur(16px);
+    animation:lensFlare 8s linear infinite;
+    mix-blend-mode:screen;
+    ">
+    </div>
+
+</div>
+
+<style>
+
+@keyframes logoFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-6px);
+
+}
+
+}
+
+@keyframes logoGlow{
+
+0%,100%{
+
+filter:
+drop-shadow(0 0 8px rgba(191,149,63,.18));
+
+}
+
+50%{
+
+filter:
+drop-shadow(0 0 18px rgba(191,149,63,.45))
+drop-shadow(0 0 30px rgba(247,214,118,.25));
+
+}
+
+}
+
+@keyframes ambientPulse{
+
+0%,100%{
+
+transform:scale(1);
+
+opacity:.45;
+
+}
+
+50%{
+
+transform:scale(1.15);
+
+opacity:.65;
+
+}
+
+}
+
+@keyframes ray1{
+
+0%,100%{
+
+opacity:.15;
+
+transform:
+translateY(10px)
+rotate(-8deg);
+
+}
+
+50%{
+
+opacity:.5;
+
+transform:
+translateY(-10px)
+rotate(-5deg);
+
+}
+
+}
+
+@keyframes ray2{
+
+0%,100%{
+
+opacity:.12;
+
+transform:
+translateY(8px)
+rotate(10deg);
+
+}
+
+50%{
+
+opacity:.45;
+
+transform:
+translateY(-12px)
+rotate(6deg);
+
+}
+
+}
+
+@keyframes lensFlare{
+
+0%{
+
+left:-140px;
+
+top:20px;
+
+opacity:10;
+
+}
+
+15%{
+
+opacity:.45;
+
+}
+
+50%{
+
+opacity:.75;
+
+}
+
+85%{
+
+opacity:.35;
+
+}
+
+100%{
+
+left:220px;
+
+top:-20px;
+
+opacity:0;
+
+}
+
+}
+
+</style>
+            
+<h1 class="serif-title text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] -mt-10 sm:-mt-12 lg:-mt-14">
+    Elevate Your Brand With <br>
+	<span class="gold-gradient-text cinematic-text">
+	    Cinematic Authority
+	</span>
+</h1>
+            <p class="text-zinc-400 text-base sm:text-lg max-w-2xl mx-auto font-light leading-relaxed">
+                A complete suite of video marketing assets, ranging from corporate content to basic social media reels, professional camera systems, advanced post-production setups, and strategic platform delivery tailored directly within Hyderabad-Bengaluru-Vizag-Chennai-Nellore.
+            </p>
+            
+            <div class="pt-6 flex flex-wrap justify-center gap-4">
+                <a href="#retainers" class="shimmer-btn bg-gradient-to-r from-[#bf953f] to-[#aa771c] text-black font-semibold text-sm tracking-wide px-8 py-4 rounded shadow-xl shadow-amber-500/5 hover:opacity-95 transition-all">
+                    Explore Monthly Plans
+                </a>
+                <a href="#contact" class="bg-zinc-900/90 border border-zinc-800 text-zinc-300 hover:text-white font-semibold text-sm tracking-wide px-8 py-4 rounded transition-all hover:bg-zinc-800">
+                    Connect Privately
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 1: Monthly Packages (Retainer Plans) -->
+    <section id="retainers" class="py-28 max-w-7xl mx-auto px-6 relative">
+        <div class="ambient-motion-bg top-[30%] left-[25%]"></div>
+        
+        <div class="text-center mb-20 relative z-10">
+            <span class="text-xs uppercase tracking-[0.3em] text-zinc-500 font-semibold block mb-2">Tiered Monthly </span>
+            <h2 class="serif-title text-3xl sm:text-5xl font-bold text-white">The Production Phases</h2>
+            <div class="w-16 h-[2px] bg-[#bf953f] mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch relative z-10">
+            
+            <!-- Phase 1 -->
+            <div class="premium-card rounded-xl p-8 flex flex-col justify-between relative">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-semibold tracking-widest text-[#bf953f] uppercase block mb-0.5">Phase 01</span>
+                            <h3 class="text-2xl font-bold text-white tracking-wide">Starter Plan</h3>
+                        </div>
+                        <i class="fa-solid fa-bolt text-zinc-700 text-lg"></i>
+                    </div>
+                    <div class="w-full h-[1px] bg-zinc-900 my-4"></div>
+                    <ul class="space-y-1 text-sm text-zinc-400">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Weekly 2 shoot with iPhone gear or professional gear</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Weekly 2-3 reels (1-2mins) with basic editing and standard camera work <span class="text-zinc-500 text-xs block mt-1">(AI voice-over is not included. If the client provides their own audio, it will be added to the video. 2 basic thumbnails included.)</span></span>
+                        
+                    </ul>
+                </div>
+                <div class="mt-10 pt-6 border-t border-zinc-900">
+
+    <span class="text-xs tracking-wider text-zinc-500 uppercase block mb-3">
+        Monthly Charges
+    </span>
+
+    <!-- Hidden Price -->
+
+    <div id="price-phase1"
+         style="
+         display:none;
+         overflow:hidden;
+         animation:priceReveal .5s ease forwards;">
+
+        <span class="text-3xl font-bold text-white tracking-tight">
+
+            ₹25,000
+
+        </span>
+
+    </div>
+
+    <!-- View Price Button -->
+
+    <button
+        onclick="showPrice('price-phase1',this)"
+        style="
+        margin-top:10px;
+        width:100%;
+        padding:12px;
+        border-radius:12px;
+        border:1px solid rgba(191,149,63,.25);
+        background:rgba(191,149,63,.08);
+        color:#bf953f;
+        font-size:13px;
+        font-weight:600;
+        letter-spacing:1px;
+        cursor:pointer;
+        transition:.35s;">
+
+        <i class="fa-solid fa-lock"></i>
+
+        View Pricing
+
+    </button>
+
+</div>
+
+<style>
+
+button:hover{
+
+background:rgba(191,149,63,.18);
+
+border-color:#bf953f;
+
+box-shadow:0 0 18px rgba(191,149,63,.22);
+
+transform:translateY(-2px);
+
+}
+
+@keyframes priceReveal{
+
+0%{
+
+opacity:0;
+
+transform:translateY(15px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/* ==========================================
+   Navigation Bar Luxury Shine
+========================================== */
+
+/* ==========================================
+   Navigation Shine 1 (Soft Wide Glow)
+========================================== */
+
+
+/* ==========================================
+   Navigation Shine 2 (Thin Bright Line)
+========================================== */
+
+.nav-shine-2{
+
+    position:absolute;
+
+    top:-35%;
+
+    left:-60px;
+
+    width:28px;
+
+    height:220%;
+
+    background:linear-gradient(
+        110deg,
+        transparent,
+        rgba(255,255,255,.08),
+        rgba(255,255,255,.55),
+        rgba(255,255,255,.08),
+        transparent
+    );
+
+    transform:rotate(20deg);
+
+    filter:blur(4px);
+
+    animation:navShine2 20s ease-in-out infinite;
+
+}
+
+@keyframes navShine2{
+
+    0%{
+
+        left:-60px;
+        opacity:0;
+
+    }
+
+    15%{
+
+        opacity:.15;
+
+    }
+
+    15%{
+
+        opacity:.15;
+
+    }
+
+    100%{
+
+        left:110%;
+        opacity:0;
+
+    }
+
+}
+</style>
+
+<script>
+
+function showPrice(id,btn){
+
+const price=document.getElementById(id);
+
+price.style.display="block";
+
+btn.style.display="none";
+
+}
+
+</script>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="premium-card rounded-xl p-8 flex flex-col justify-between relative">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-semibold tracking-widest text-[#bf953f] uppercase block mb-0.5">Phase 02</span>
+                            <h3 class="text-2xl font-bold text-white tracking-wide">Growth Plan</h3>
+                        </div>
+                        <i class="fa-solid fa-chart-line text-zinc-700 text-lg"></i>
+                    </div>
+                    <div class="w-full h-[1px] bg-zinc-900 my-4"></div>
+                    <ul class="space-y-4 text-sm text-zinc-400">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Weekly 2 shoots with professional gear</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Weekly 2-3 reels (1-2 mins) and one YouTube video (4-5 mins) with mid-level editing & standard camera work (AI voice-over or client voice-over)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>1 revision per video</span>
+                       
+                    </ul>
+                </div>
+               <div class="mt-10 pt-6 border-t border-zinc-900">
+
+    <span class="text-xs tracking-wider text-zinc-500 uppercase block mb-3">
+        Monthly Charges
+    </span>
+
+    <!-- Hidden Price -->
+
+    <div id="price-phase2"
+         style="
+         display:none;
+         overflow:hidden;
+         animation:priceReveal .5s ease forwards;">
+
+        <span class="text-3xl font-bold text-white tracking-tight">
+
+            ₹55,000
+
+        </span>
+
+    </div>
+
+    <!-- View Pricing Button -->
+
+    <button
+        onclick="showPrice('price-phase2',this)"
+        style="
+        margin-top:10px;
+        width:100%;
+        padding:12px;
+        border-radius:12px;
+        border:1px solid rgba(191,149,63,.25);
+        background:rgba(191,149,63,.08);
+        color:#bf953f;
+        font-size:13px;
+        font-weight:600;
+        letter-spacing:1px;
+        cursor:pointer;
+        transition:.35s;">
+
+        <i class="fa-solid fa-lock"></i>
+
+        View Pricing
+
+    </button>
+
+</div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="premium-card rounded-xl p-8 flex flex-col justify-between relative">
+                <div class="absolute -top-3 right-6 bg-zinc-900 border border-zinc-800 text-[#bf953f] font-bold uppercase text-[9px] tracking-widest px-3 py-1 rounded">Expansion Add-ons</div>
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-semibold tracking-widest text-[#bf953f] uppercase block mb-0.5">Phase 03</span>
+                            <h3 class="text-2xl font-bold text-white tracking-wide">Advanced Plan</h3>
+                        </div>
+                        <i class="fa-solid fa-gem text-zinc-700 text-lg"></i>
+                    </div>
+                    <div class="w-full h-[1px] bg-zinc-900 my-4"></div>
+                    <ul class="space-y-4 text-sm text-zinc-400">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Weekly 3 shoots with professional gear</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Weekly 3 videos (2–3 mins)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>1 YouTube video (5-6 mins) OR 1 reel (Ai voice-over or client voice-over)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Intermediate-level editing & 1 revision per video</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-amber-500/50 mt-1 text-xs shrink-0"></i>
+                            <span>Content scripts available at additional charges</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Weekly 1 content video included in the shoot schedule.</span>
+                        </li>
+                    </ul>
+                </div>
+               <div class="mt-10 pt-6 border-t border-zinc-900">
+
+    <span class="text-xs tracking-wider text-zinc-500 uppercase block mb-3">
+        Monthly Charges
+    </span>
+
+    <!-- Hidden Price -->
+
+    <div id="price-phase3"
+         style="
+         display:none;
+         overflow:hidden;
+         animation:priceReveal .5s ease forwards;">
+
+        <span class="text-3xl font-bold text-white tracking-tight">
+
+            ₹80,000
+
+        </span>
+
+    </div>
+
+    <!-- View Pricing Button -->
+
+    <button
+        onclick="showPrice('price-phase3',this)"
+        style="
+        margin-top:10px;
+        width:100%;
+        padding:12px;
+        border-radius:12px;
+        border:1px solid rgba(191,149,63,.25);
+        background:rgba(191,149,63,.08);
+        color:#bf953f;
+        font-size:13px;
+        font-weight:600;
+        letter-spacing:1px;
+        cursor:pointer;
+        transition:.35s;">
+
+        <i class="fa-solid fa-lock"></i>
+
+        View Pricing
+
+    </button>
+
+</div>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="premium-card rounded-xl p-8 flex flex-col justify-between border border-[#bf953f]/30 relative bg-[radial-gradient(ellipse_at_bottom,rgba(191,149,63,0.04),transparent)]">
+                <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#bf953f] to-[#aa771c] text-black font-bold uppercase text-[10px] tracking-widest px-4 py-1 rounded shadow-lg">Highly Recommended</div>
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-semibold tracking-widest text-[#bf953f] uppercase block mb-0.5">Phase 04</span>
+                            <h3 class="text-2xl font-bold text-white tracking-wide">Premium Plan</h3>
+                        </div>
+                        <i class="fa-solid fa-crown text-[#bf953f] text-lg"></i>
+                    </div>
+                    <div class="w-full h-[1px] bg-zinc-950 my-4"></div>
+                    <ul class="space-y-4 text-sm text-zinc-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Weekly 3–4 shoots with professional gear</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Weekly 4 reels (2–3 mins)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>1 YouTube video (10 mins) OR 1 reel with professional editing (AI voice-over, client voice-over, or professional dubbing; extra charges may apply depending on video length)</span>
+                        </li>
+                        <li class="flex items-start gap-3 font-medium text-white">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Includes After Effects animations, color correction, and marketing support</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>2 revisions per video</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-[#bf953f] font-medium">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Content scripts included</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+                            <span>Instagram and YouTube video publishing (in client-related accounts)</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-amber-400 text-xs italic bg-amber-500/5 p-2 rounded border border-amber-500/10">
+                            <i class="fa-solid fa-helicopter mt-0.5 text-xs shrink-0"></i>
+                            <span>Drone Allocation: 1 drone shoot slot provided per week.</span>
+                        </li>
+                    </ul>
+                </div>
+               <div class="mt-10 pt-6 border-t border-zinc-900">
+
+    <span class="text-xs tracking-wider text-[#bf953f] uppercase block mb-3 font-medium">
+        Monthly Charges
+    </span>
+
+    <!-- Hidden Price -->
+
+    <div id="price-phase4"
+         style="
+         display:none;
+         overflow:hidden;
+         animation:priceReveal .5s ease forwards;">
+
+        <span class="text-3xl font-bold text-white tracking-tight">
+
+            ₹1,30,000
+
+        </span>
+
+    </div>
+
+    <!-- View Pricing Button -->
+
+    <button
+        onclick="showPrice('price-phase4',this)"
+        style="
+        margin-top:10px;
+        width:100%;
+        padding:12px;
+        border-radius:12px;
+        border:1px solid rgba(191,149,63,.25);
+        background:linear-gradient(135deg,rgba(191,149,63,.08),rgba(191,149,63,.15));
+        color:#bf953f;
+        font-size:13px;
+        font-weight:600;
+        letter-spacing:1px;
+        cursor:pointer;
+        transition:all .35s ease;
+        box-shadow:0 0 15px rgba(191,149,63,.08);">
+
+        <i class="fa-solid fa-lock"></i>
+        &nbsp; View Pricing
+
+    </button>
+
+</div>
+
+<style>
+
+/* Add only once on the page */
+
+button:hover{
+
+background:linear-gradient(135deg,
+rgba(191,149,63,.18),
+rgba(191,149,63,.28));
+
+border-color:#bf953f;
+
+box-shadow:
+0 0 22px rgba(191,149,63,.22);
+
+transform:translateY(-2px);
+
+}
+
+@keyframes priceReveal{
+
+0%{
+
+opacity:0;
+
+transform:
+translateY(15px)
+scale(.96);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:
+translateY(0)
+scale(1);
+
+}
+
+}
+
+</style>
+
+<script>
+
+/* Add only once on the page */
+
+function showPrice(id,btn){
+
+const price=document.getElementById(id);
+
+price.style.display="block";
+
+btn.style.display="none";
+
+}
+
+</script>
+            </div>
+
+            <!-- Phase 5 -->
+            <div class="premium-card rounded-xl p-8 flex flex-col justify-between border border-[#bf953f]/20 lg:col-span-2 relative overflow-hidden bg-[radial-gradient(ellipse_at_top,rgba(191,149,63,0.08),transparent)]">
+
+    <!-- Premium Gold Glow -->
+    <div class="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-[#bf953f]/10 blur-[90px] pointer-events-none"></div>
+
+    <div class="absolute -bottom-24 -right-24 w-72 h-72 rounded-full bg-[#bf953f]/5 blur-[90px] pointer-events-none"></div>
+
+    <!-- Luxury Reflection -->
+    <div class="absolute inset-0 overflow-hidden rounded-xl pointer-events-none">
+
+        <div class="absolute -left-1/2 top-0 h-full w-40 bg-gradient-to-r from-transparent via-white/10 to-transparent rotate-[18deg] enterprise-shine"></div>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full relative z-10">
+
+        <div class="flex flex-col justify-between">
+
+            <div>
+
+                <span class="text-xs font-semibold tracking-widest text-[#bf953f] uppercase block mb-1">
+
+                    Phase 05 • Permanent Setup
+
+                </span>
+
+                <h3 class="serif-title text-3xl font-bold text-white tracking-wide mb-2">
+
+                    Enterprise Plan
+
+                </h3>
+
+                <div class="w-full h-[1px] bg-[#bf953f]/20 my-4"></div>
+
+                <ul class="space-y-4 text-sm text-zinc-300">
+
+                    <li class="flex items-center gap-2.5 text-[#bf953f] font-semibold text-xs uppercase tracking-wider bg-[#bf953f]/10 border border-[#bf953f]/20 rounded-lg px-3 py-2">
+
+                        <i class="fa-solid fa-infinity text-xs"></i>
+
+                        Permanent Operational Status
+
+                    </li>
+
+                    <li class="flex items-start gap-3">
+
+                        <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+
+                        <span>Weekly 4-5 shoots with professional gear</span>
+
+                    </li>
+
+                    <li class="flex items-start gap-3">
+
+                        <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+
+                        <span>Weekly 4-5 reels (2–3 mins)</span>
+
+                    </li>
+
+                    <li class="flex items-start gap-3">
+
+                        <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+
+                        <span>2 YouTube videos (10 -15 mins)</span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="mt-auto pt-6 border-t border-[#bf953f]/15 hidden md:block">
+
+    <span class="text-xs tracking-wider text-zinc-500 uppercase block mb-3">
+        Monthly Charges
+    </span>
+
+    <div id="price-phase5-desktop"
+         style="display:none;animation:priceReveal .45s ease forwards;">
+
+        <span class="text-4xl font-bold text-white tracking-tight gold-gradient-text">
+            ₹1,95,000
+        </span>
+
+    </div>
+
+    <button
+        onclick="showPrice('price-phase5-desktop',this)"
+        style="
+        width:100%;
+        margin-top:12px;
+        padding:12px;
+        border-radius:12px;
+        border:1px solid rgba(191,149,63,.22);
+        background:linear-gradient(135deg,rgba(191,149,63,.08),rgba(191,149,63,.15));
+        color:#bf953f;
+        font-size:13px;
+        font-weight:600;
+        letter-spacing:1px;
+        cursor:pointer;
+        transition:.35s;">
+
+        <i class="fa-solid fa-lock"></i>
+
+        View Pricing
+
+    </button>
+
+</div>
+
+
+        </div>
+
+        <div class="flex flex-col justify-between border-t md:border-t-0 md:border-l border-[#bf953f]/15 pt-6 md:pt-0 md:pl-8">
+
+            <ul class="space-y-4 text-sm text-zinc-300">
+
+                <li class="bg-zinc-900/80 p-4 rounded border border-[#bf953f]/15 text-xs text-zinc-400 leading-relaxed">
+
+                    <strong class="text-white block mb-1">
+
+                        <i class="fa-solid fa-cube text-[#bf953f] mr-1.5"></i>
+
+                        Professional editing
+
+                    </strong>
+
+                    Professional video editing, including any required 3D flow animations (AI voice-over, client-provided audio, or professional human dubbing)
+
+                </li>
+
+                <li class="flex items-start gap-3">
+
+                    <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+
+                    <span>Content scripts included</span>
+
+                </li>
+
+                <li class="flex items-start gap-3">
+
+                    <i class="fa-solid fa-circle-check text-[#bf953f] mt-1 text-xs shrink-0"></i>
+
+                    <span>Instagram and YouTube handling for publishing</span>
+
+                </li>
+
+                <li class="flex items-start gap-3 text-[#bf953f] text-xs italic">
+
+                    <i class="fa-solid fa-helicopter mt-0.5 text-xs shrink-0"></i>
+
+                    <span>Drone Allocation: 1 drone shoot slot provided per week.</span>
+
+                </li>
+
+            </ul>
+
+            <div class="mt-6 pt-4 border-t border-[#bf953f]/15 md:hidden">
+
+    <span class="text-xs tracking-wider text-zinc-500 uppercase block mb-3">
+        Monthly Charges
+    </span>
+
+    <div id="price-phase5-mobile"
+         style="display:none;animation:priceReveal .45s ease forwards;">
+
+        <span class="text-3xl font-bold text-white tracking-tight">
+            ₹1,95,000
+        </span>
+
+    </div>
+
+    <button
+        onclick="showPrice('price-phase5-mobile',this)"
+        style="
+        width:100%;
+        margin-top:12px;
+        padding:12px;
+        border-radius:12px;
+        border:1px solid rgba(191,149,63,.22);
+        background:linear-gradient(135deg,rgba(191,149,63,.08),rgba(191,149,63,.15));
+        color:#bf953f;
+        font-size:13px;
+        font-weight:600;
+        letter-spacing:1px;
+        cursor:pointer;
+        transition:.35s;">
+
+        <i class="fa-solid fa-lock"></i>
+
+        View Pricing
+
+    </button>
+
+</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<style>
+
+.enterprise-shine{
+
+animation:enterpriseShine 8s linear infinite;
+
+}
+
+@keyframes enterpriseShine{
+
+0%{
+
+transform:
+translateX(-350%)
+rotate(18deg);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:.15;
+
+}
+
+50%{
+
+opacity:.35;
+
+}
+
+85%{
+
+opacity:.15;
+
+}
+
+100%{
+
+transform:
+translateX(850%)
+rotate(18deg);
+
+opacity:0;
+
+}
+
+}
+
+</style>
+
+<!-- ==========================================
+     IMPORTANT PRODUCTION NOTE
+========================================== -->
+
+<div class="w-full mt-2 mb-1 border-t border-zinc-800 pt-1">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+		<!-- Heading -->
+
+		<div class="flex items-center gap-1 mb-1">
+
+		    <i class="fa-solid fa-circle-info text-[#bf953f] text-sm lg:text-base"></i>
+
+		    <h3 class="text-[#f7d676] text-sm font-bold uppercase tracking-[5px] whitespace-nowrap">
+
+		        IMPORTANT PRODUCTION NOTE
+
+		    </h3>
+
+		    <div class="flex-1 h-px bg-zinc-800"></div>
+
+		</div>
+
+		<!-- Note -->
+
+		<p class="text-zinc-300 text-[10px] leading-7 font-normal">
+
+		    All PHASES include only video production and final delivery.
+		    Services including Publicity, Paid Advertisements, Channel Management,
+		    Website Development, and Social Media Handling are NOT INCLUDED in
+		    these packages.
+
+		    These services are available separately under the ADD-ON SERVICES section.
+
+		</p>
+
+		</div>
+
+		</div>
+<style>
+
+/* Optional - makes the paragraph use the full width on desktop */
+@media (min-width:1024px){
+
+    .max-w-7xl p{
+        max-width:100%;
+    }
+
+}
+
+</style>
+
+<style>
+
+.important-note{
+
+    position:inherit;
+    overflow:hidden;
+
+    margin-top:32px;
+
+    background:#0d0d0d;
+
+    border:1px solid rgba(191,149,63,.20);
+
+    border-radius:12px;
+
+    padding:12px 16px;
+
+    box-shadow:0 0 12px rgba(191,149,63,.05);
+
+    transition:.4s ease;
+
+}
+
+/* Layout */
+
+.note-content{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+}
+
+/* Icon */
+
+.note-icon{
+
+    width:32px;
+
+    height:32px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(135deg,#bf953f,#f6d676);
+
+    color:#111;
+
+    font-size:40px;
+
+    box-shadow:0 0 10px rgba(191,149,63,.25);
+
+    animation:iconFloat 3.5s ease-in-out infinite;
+
+}
+
+/* Title */
+
+.note-title{
+
+    color:#bf953f;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+    margin-bottom:4px;
+
+}
+
+/* Text */
+
+.note-text{
+
+    color:#bcbcbc;
+
+    font-size:7px;
+
+    line-height:1.65;
+
+}
+
+.note-text strong{
+
+    color:#fff;
+
+}
+
+.gold-text{
+
+    color:#bf953f;
+
+    font-weight:600;
+
+}
+
+/* Smooth Reflection */
+
+.light-sweep{
+
+    position:absolute;
+
+    top:-50%;
+
+    left:0;
+
+    width:38%;
+
+    height:220%;
+
+    background:
+
+    linear-gradient(
+
+    110deg,
+
+    transparent,
+
+    rgba(255,255,255,.05),
+
+    rgba(255,223,110,.15),
+
+    rgba(255,255,255,.05),
+
+    transparent
+
+    );
+
+    transform:
+
+    translateX(-220%)
+
+    rotate(22deg);
+
+    filter:blur(8px);
+
+    animation:smoothSweep 8s cubic-bezier(.4,0,.2,1) infinite;
+
+}
+
+/* Hover */
+
+.important-note:hover{
+
+    transform:translateY(-2px);
+
+    border-color:#bf953f;
+
+    box-shadow:
+
+    0 8px 22px rgba(191,149,63,.14);
+
+}
+
+/* Animations */
+
+@keyframes smoothSweep{
+
+    0%,15%{
+
+        transform:translateX(-220%) rotate(22deg);
+
+    }
+
+    55%{
+
+        transform:translateX(320%) rotate(22deg);
+
+    }
+
+    100%{
+
+        transform:translateX(320%) rotate(22deg);
+
+    }
+
+}
+
+@keyframes iconFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-2px);
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.note-content{
+
+gap:10px;
+
+}
+
+.note-icon{
+
+width:28px;
+
+height:28px;
+
+font-size:12px;
+
+}
+
+.note-title{
+
+font-size:10px;
+
+}
+
+.note-text{
+
+font-size:11px;
+
+line-height:1.55;
+
+}
+
+}
+
+</style>
+    </section>
+
+    <!-- Section 2: Freelancing Per Day Schedules -->
+    <section id="freelance" class="py-28 bg-gradient-to-b from-[#050505] via-zinc-950 to-[#050505] border-t border-b border-zinc-900 relative">
+        <div class="ambient-motion-bg-2 top-[20%] right-[5%]"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-20">
+                <span class="text-xs uppercase tracking-[0.3em] text-zinc-500 font-semibold block mb-2">Single-Deployment Production</span>
+                <h2 class="serif-title text-3xl sm:text-5xl font-bold text-white">FREELANCING (PER DAY SCHEDULE)</h2>
+                <div class="w-16 h-[2px] bg-[#bf953f] mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- Basic Level -->
+                <!-- Basic Level -->
+<div class="rounded-2xl bg-zinc-900/20 backdrop-blur-xl border border-[#bf953f]/20 overflow-hidden">
+
+    <!-- Header -->
+    <button
+        onclick="toggleBasicLevel()"
+        class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#bf953f]/10 transition-all duration-500 group">
+
+        <div class="flex items-center gap-4">
+
+            <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-[#bf953f] to-yellow-300 flex items-center justify-center shadow-lg shadow-yellow-500/20 group-hover:scale-110 transition">
+
+                <i class="fa-solid fa-video text-black text-lg"></i>
+
+            </div>
+
+            <div>
+
+                <span class="text-xs uppercase tracking-[3px] text-[#bf953f]">
+                    Option A
+                </span>
+
+                <h3 class="text-white font-bold text-xl">
+                    Basic Level
+                </h3>
+
+                <p class="text-zinc-400 text-sm">
+                    Click to View Package Details
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="flex items-center gap-4">
+
+            <span class="hidden md:block bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">
+                5–6 Hours Shoot
+            </span>
+
+            <i id="basicArrow"
+                class="fa-solid fa-chevron-down text-[#bf953f] text-xl transition-transform duration-500">
+            </i>
+
+        </div>
+
+    </button>
+
+    <!-- Content -->
+
+    <div id="basicContent"
+        class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+
+        <div class="px-6 pb-6 border-t border-zinc-800">
+
+            <div class="mt-5">
+
+                <div
+                    class="rounded-xl border border-[#bf953f]/20 bg-gradient-to-r from-[#bf953f]/10 to-transparent p-4 mb-6">
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-camera text-[#bf953f] mt-1"></i>
+
+                        <div>
+
+                            <h4 class="text-[#bf953f] font-semibold">
+                                Shoot Type
+                            </h4>
+
+                            <p class="text-zinc-300 mt-2">
+                                Basic video production using available natural or ambient lighting.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="space-y-4 text-zinc-300 text-sm leading-7">
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-circle-check text-[#bf953f] mt-1"></i>
+                        <p>
+                            Includes
+                            <strong class="text-white">
+                                1-2 ReelS (1–2 mins),
+                                1 YouTube Video (3–5 mins)
+                            </strong>
+                            and basic photography based on the content.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-circle-check text-[#bf953f] mt-1"></i>
+                        <p>
+                            Basic editing with AI voice-over or client-provided audio.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-microphone-lines text-[#bf953f] mt-1"></i>
+                        <p>
+                            Professional dubbing available for
+                            <strong class="text-white">
+                                ₹1,500 – ₹2,000
+                            </strong>
+                           depending on the duration of the video.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-car-side text-red-400 mt-1"></i>
+                        <p>
+                            Travel charges are not included.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div
+                    class="mt-8 rounded-xl border border-[#bf953f]/30 bg-gradient-to-r from-[#bf953f]/10 to-transparent p-5">
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-money-bill-wave text-[#bf953f] text-xl mt-1"></i>
+
+                        <div>
+
+                            <h4 class="text-[#bf953f] font-semibold mb-2">
+                                Pricing
+                            </h4>
+
+                            <p class="text-white text-3xl font-bold mb-2">
+                                ₹8,500
+                            </p>
+
+                            <p class="text-zinc-300">
+                                Charge per schedule.
+                            </p>
+
+                            <div class="mt-4 rounded-lg bg-zinc-950 border border-zinc-800 p-3">
+
+                                <span class="text-zinc-400">
+                                    iPhone Shoot Only:
+                                </span>
+
+                                <span class="text-[#bf953f] font-bold text-lg">
+                                    ₹5,000
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function toggleBasicLevel(){
+
+    const content=document.getElementById("basicContent");
+    const arrow=document.getElementById("basicArrow");
+
+    if(content.style.maxHeight && content.style.maxHeight!="0px"){
+
+        content.style.maxHeight="0px";
+        arrow.style.transform="rotate(0deg)";
+
+    }else{
+
+        content.style.maxHeight=content.scrollHeight+"px";
+        arrow.style.transform="rotate(180deg)";
+
+    }
+
+}
+
+</script>
+
+                <!-- Mid Level -->
+                <!-- Mid Level -->
+<div class="rounded-2xl bg-zinc-900/20 backdrop-blur-xl border border-[#bf953f]/20 overflow-hidden h-full flex flex-col">
+
+    <!-- Header -->
+    <button
+        onclick="toggleMidLevel()"
+        class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#bf953f]/10 transition-all duration-500 group">
+
+        <div class="flex items-center gap-4">
+
+            <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-[#bf953f] to-yellow-300 flex items-center justify-center shadow-lg shadow-yellow-500/20 group-hover:scale-110 transition">
+
+                <i class="fa-solid fa-clapperboard text-black text-lg"></i>
+
+            </div>
+
+            <div>
+
+                <span class="text-xs uppercase tracking-[3px] text-[#bf953f]">
+                    Option B
+                </span>
+
+                <h3 class="text-white font-bold text-xl">
+                    Mid Level
+                </h3>
+
+                <p class="text-zinc-400 text-sm">
+                    Click to View Package Details
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="flex items-center gap-4">
+
+            <span class="hidden md:block bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">
+                5–6 Hours Shoot
+            </span>
+
+            <i id="midArrow"
+                class="fa-solid fa-chevron-down text-[#bf953f] text-xl transition-transform duration-500">
+            </i>
+
+        </div>
+
+    </button>
+
+    <!-- Content -->
+    <div id="midContent"
+        class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+
+        <div class="px-6 pb-6 border-t border-zinc-800">
+
+            <div class="mt-5">
+
+                <!-- Shoot Type -->
+                <div
+                    class="rounded-xl border border-[#bf953f]/20 bg-gradient-to-r from-[#bf953f]/10 to-transparent p-4 mb-6">
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-video text-[#bf953f] mt-1"></i>
+
+                        <div>
+
+                            <h4 class="text-[#bf953f] font-semibold">
+                                Shoot Type
+                            </h4>
+
+                            <p class="text-zinc-300 mt-2">
+                                Intermediate cinematic video production using available lighting with enhanced camera movements and framing.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Features -->
+
+                <div class="space-y-4 text-zinc-300 text-sm leading-7">
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-circle-check text-[#bf953f] mt-1"></i>
+                        <p>
+                            Includes
+                            <strong class="text-white">
+                                2 Reels (2 mins)
+                            </strong>
+                            and
+                            <strong class="text-white">
+                                1 YouTube Video (5–10 mins)
+                            </strong>
+                            based on the content.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-circle-check text-[#bf953f] mt-1"></i>
+                        <p>
+                            Intermediate quality video production with improved camera angles and storytelling.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-circle-check text-[#bf953f] mt-1"></i>
+                        <p>
+                            Intermediate editing with AI voice-over or client-provided voice-over.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-microphone-lines text-[#bf953f] mt-1"></i>
+                        <p>
+                            Professional dubbing available for
+                            <strong class="text-white">
+                                ₹1,500 – ₹2,000
+                            </strong>
+                            depending on video duration.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-film text-[#bf953f] mt-1"></i>
+                        <p>
+                            Includes premium transitions, custom thumbnails and
+                            <strong class="text-white">
+                                1 Revision
+                            </strong>.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Pricing -->
+
+                <div
+                    class="mt-8 rounded-xl border border-[#bf953f]/30 bg-gradient-to-r from-[#bf953f]/10 to-transparent p-5">
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-money-bill-wave text-[#bf953f] text-xl mt-1"></i>
+
+                        <div>
+
+                            <h4 class="text-[#bf953f] font-semibold mb-2">
+                                Pricing
+                            </h4>
+
+                            <p class="text-white text-3xl font-bold mb-2">
+                                ₹12,500
+                            </p>
+
+                            <p class="text-zinc-300">
+                                Charge per schedule.
+                            </p>
+
+                            <div class="mt-4 rounded-lg bg-zinc-950 border border-zinc-800 p-3">
+
+                                <i class="fa-solid fa-circle-info text-[#bf953f] mr-2"></i>
+
+                                <span class="text-zinc-400">
+                                    Shoots at the client's premises within city limits (20 km) follow the standard Travel Policy. Please refer to the Travel Policy section for complete details.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function toggleMidLevel(){
+
+    const content=document.getElementById("midContent");
+    const arrow=document.getElementById("midArrow");
+
+    if(content.style.maxHeight && content.style.maxHeight!="0px"){
+
+        content.style.maxHeight="0px";
+        arrow.style.transform="rotate(0deg)";
+
+    }else{
+
+        content.style.maxHeight=content.scrollHeight+"px";
+        arrow.style.transform="rotate(180deg)";
+
+    }
+
+}
+
+</script>
+                <!-- High Level -->
+               <!-- High Level -->
+<div class="rounded-2xl bg-zinc-900/20 backdrop-blur-xl border border-[#bf953f]/20 overflow-hidden">
+
+    <!-- Header -->
+    <button
+        onclick="toggleHighLevel()"
+        class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#bf953f]/10 transition-all duration-500 group">
+
+        <div class="flex items-center gap-4">
+
+            <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-[#bf953f] to-yellow-300 flex items-center justify-center shadow-lg shadow-yellow-500/20 group-hover:scale-110 transition">
+
+                <i class="fa-solid fa-crown text-black text-lg"></i>
+
+            </div>
+
+            <div>
+
+                <span class="text-xs uppercase tracking-[3px] text-[#bf953f]">
+                    Option C
+                </span>
+
+                <h3 class="text-white font-bold text-xl">
+                    High Level
+                </h3>
+
+                <p class="text-zinc-400 text-sm">
+                    Click to View Package Details
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="flex items-center gap-4">
+
+            <span class="hidden md:block bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">
+                5–6 Hours Shoot
+            </span>
+
+            <i id="highArrow"
+                class="fa-solid fa-chevron-down text-[#bf953f] text-xl transition-transform duration-500">
+            </i>
+
+        </div>
+
+    </button>
+
+    <!-- Content -->
+
+    <div id="highContent"
+        class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+
+        <div class="px-6 pb-6 border-t border-zinc-800">
+
+            <div class="mt-5">
+
+                <!-- Shoot Type -->
+
+                <div
+                    class="rounded-xl border border-[#bf953f]/20 bg-gradient-to-r from-[#bf953f]/10 to-transparent p-4 mb-6">
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-camera-retro text-[#bf953f] mt-1"></i>
+
+                        <div>
+
+                            <h4 class="text-[#bf953f] font-semibold">
+                                Shoot Type
+                            </h4>
+
+                            <p class="text-zinc-300 mt-2">
+                                Professional cinematic video production using professional cameras,
+                                premium lenses, add-on lighting equipment and advanced shooting techniques.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Features -->
+
+                <div class="space-y-4 text-zinc-300 text-sm leading-7">
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-circle-check text-[#bf953f] mt-1"></i>
+                        <p>
+                            Includes
+                            <strong class="text-white">
+                                2 Reels (2–3 mins)
+                            </strong>
+                            and
+                            <strong class="text-white">
+                                1 YouTube Video (10 mins)
+                            </strong>
+                            based on the project requirements.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-circle-check text-[#bf953f] mt-1"></i>
+                        <p>
+                            Professional editing with cinematic colour correction,
+                            smooth transitions,
+                            premium sound design,
+                            and custom thumbnails.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-circle-check text-[#bf953f] mt-1"></i>
+                        <p>
+                            Includes
+                            <strong class="text-white">
+                                2 Revisions
+                            </strong>
+                            for final delivery.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <i class="fa-solid fa-microphone-lines text-[#bf953f] mt-1"></i>
+                        <p>
+                            AI voice-over or client-provided voice-over included.
+                            Professional dubbing available at
+                            <strong class="text-white">
+                                ₹1,500 – ₹2,000
+                            </strong>
+                            depending on video duration.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- 3D Animation -->
+
+                <div
+                    class="mt-6 rounded-xl border border-amber-500/30 bg-gradient-to-r from-amber-500/10 to-transparent p-5">
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-cube text-[#bf953f] text-xl mt-1"></i>
+
+                        <div>
+
+                            <h4 class="text-[#bf953f] font-semibold mb-2">
+                                3D Flow Animations
+                            </h4>
+
+                            <p class="text-zinc-300 leading-7">
+                                Mid-level
+                                <strong class="text-white">
+                                    3D Flow Animations
+                                </strong>
+                                up to
+                                <strong class="text-white">
+                                    1 Minute
+                                </strong>
+                                are included whenever the project requires them.
+                            </p>
+
+                            <div class="mt-3 rounded-lg bg-zinc-950 border border-zinc-800 p-3">
+
+                                <i class="fa-solid fa-circle-info text-[#bf953f] mr-2"></i>
+
+                                <span class="text-zinc-400">
+                                    Additional 3D animation work beyond 1 minute
+                                    will be charged separately depending on
+                                    animation complexity, rendering time,
+                                    and production requirements.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Pricing -->
+
+                <div
+                    class="mt-8 rounded-xl border border-[#bf953f]/30 bg-gradient-to-r from-[#bf953f]/10 to-transparent p-5">
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-money-bill-wave text-[#bf953f] text-xl mt-1"></i>
+
+                        <div>
+
+                            <h4 class="text-[#bf953f] font-semibold mb-2">
+                                Pricing
+                            </h4>
+
+                            <p class="text-white text-3xl font-bold mb-2">
+                                ₹20,000 – ₹25,000
+                            </p>
+
+                            <p class="text-zinc-300">
+                                Charge per schedule.
+                            </p>
+
+                            <div class="mt-4 rounded-lg bg-zinc-950 border border-zinc-800 p-3">
+
+                                <i class="fa-solid fa-circle-info text-[#bf953f] mr-2"></i>
+
+                                <span class="text-zinc-400">
+                                    Extra 3D Flow Animations beyond the included limit
+                                    are billed separately according to project scope.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function toggleHighLevel(){
+
+    const content=document.getElementById("highContent");
+    const arrow=document.getElementById("highArrow");
+
+    if(content.style.maxHeight && content.style.maxHeight!="0px"){
+
+        content.style.maxHeight="0px";
+        arrow.style.transform="rotate(0deg)";
+
+    }else{
+
+        content.style.maxHeight=content.scrollHeight+"px";
+        arrow.style.transform="rotate(180deg)";
+
+    }
+
+}
+
+</script>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Key Frames Media Section -->
+
+<!-- WHY CHOOSE US (Enhanced) -->
+<section id="why-choose-us" class="py-28 max-w-7xl mx-auto px-6 relative">
+    <div class="text-center mb-20">
+        <span class="text-xs uppercase tracking-[0.3em] text-zinc-500 font-semibold block mb-2">Corporate Production KeyFrameworks</span>
+        <h2 class="serif-title text-3xl sm:text-5xl font-bold text-white"> Why To Choose KEY FRAMES MEDIA??</h2>
+        <div class="w-16 h-[2px] bg-[#bf953f] mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="why-card p-6 bg-zinc-900/40 rounded-lg border border-zinc-800/80"><i class="fa-solid fa-video text-[#bf953f] text-xl mb-3 block"></i><p class="text-sm text-zinc-300 font-light">• Professional gear for cinematic quality</p></div>
+        <div class="why-card p-6 bg-zinc-900/40 rounded-lg border border-zinc-800/80"><i class="fa-solid fa-layer-group text-[#bf953f] text-xl mb-3 block"></i><p class="text-sm text-zinc-300 font-light">• Tiered packages to suit startups, influencers, and enterprises</p></div>
+        <div class="why-card p-6 bg-zinc-900/40 rounded-lg border border-zinc-800/80"><i class="fa-solid fa-wand-magic-sparkles text-[#bf953f] text-xl mb-3 block"></i><p class="text-sm text-zinc-300 font-light">• Editing expertise from basic reels to advanced 3D animation</p></div>
+        <div class="why-card p-6 bg-zinc-900/40 rounded-lg border border-zinc-800/80"><i class="fa-solid fa-rotate text-[#bf953f] text-xl mb-3 block"></i><p class="text-sm text-zinc-300 font-light">• Revision policy ensures client satisfaction</p></div>
+        <div class="why-card p-6 bg-zinc-900/40 rounded-lg border border-zinc-800/80"><i class="fa-solid fa-handshake text-[#bf953f] text-xl mb-3 block"></i><p class="text-sm text-zinc-300 font-light">• Transparent pricing with clear breakdowns for scripts, dubbing, drone, and travel no hidden costs</p></div>
+        <div class="why-card p-6 bg-zinc-900/40 rounded-lg border border-zinc-800/80"><i class="fa-solid fa-headset text-[#bf953f] text-xl mb-3 block"></i><p class="text-sm text-zinc-300 font-light">• Dedicated client support with weekly updates and flexible scheduling.</p></div>
+        <div class="why-card p-6 bg-zinc-900/40 rounded-lg border border-zinc-800/80"><i class="fa-solid fa-lock text-[#bf953f] text-xl mb-3 block"></i><p class="text-sm text-zinc-300 font-light">• Confidentiality reassures corporate clients that sensitive footage won't leak or be misused.</p></div>
+        <div class="why-card p-6 bg-zinc-900/40 rounded-lg border border-zinc-800/80"><i class="fa-solid fa-fingerprint text-[#bf953f] text-xl mb-3 block"></i><p class="text-sm text-zinc-300 font-light">• Branding expertise for corporate identity.</p></div>
+        <div class="why-card p-6 bg-zinc-900/40 rounded-lg border border-zinc-800/80"><i class="fa-solid fa-share-nodes text-[#bf953f] text-xl mb-3 block"></i><p class="text-sm text-zinc-300 font-light">• Publishing assistance for Instagram and YouTube to maximize reach</p></div>
+        <div class="why-card p-6 bg-zinc-900/40 rounded-lg border border-zinc-800/80"><i class="fa-solid fa-magnifying-glass-chart text-[#bf953f] text-xl mb-3 block"></i><p class="text-sm text-zinc-300 font-light">• SEO integration and website design options for complete digital growth</p></div>
+        <div class="why-card p-6 bg-zinc-900/40 rounded-lg border border-zinc-800/80"><i class="fa-solid fa-microphone-lines text-[#bf953f] text-xl mb-3 block"></i><p class="text-sm text-zinc-300 font-light">• Voice‑over services starting from ₹1,500 – ₹10,000, including professional human dubbing in multiple languages</p></div>
+        <div class="why-card p-6 bg-zinc-900/40 rounded-lg border border-zinc-800/80"><i class="fa-solid fa-users text-[#bf953f] text-xl mb-3 block"></i><p class="text-sm text-zinc-300 font-light">• Celebrity promotions and influencer collaborations available for premium campaigns</p></div>
+
+    </div>
+</section>
+
+<style>
+.why-card{position:relative;overflow:hidden;transition:.8s ease;backdrop-filter:blur(10px)}
+.why-card:before{content:"";position:absolute;top:-40%;left:-160%;width:65%;height:220%;background:linear-gradient(110deg,transparent,rgba(255,255,255,.08),rgba(255,215,120,.25),transparent);transform:rotate(18deg);filter:blur(8px)}
+.why-card:after{content:"";position:absolute;inset:0;border:1px solid rgba(191,149,63,.08);opacity:0;transition:.6s}
+.why-card.active{animation:floatCard 5s ease-in-out infinite}
+.why-card:hover{transform:translateY(-10px) scale(1.03);border-color:#bf953f;box-shadow:0 0 35px rgba(191,149,63,.25),0 20px 45px rgba(0,0,0,.45)}
+.why-card:hover:before,.why-card.shine:before{animation:sweep 1.8s ease}
+.why-card:hover:after{opacity:1}
+.why-card:hover i{transform:scale(1.15) rotate(8deg);filter:drop-shadow(0 0 12px rgba(191,149,63,.8));transition:.6s}
+@keyframes sweep{from{left:-160%}to{left:170%}}
+@keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+</style>
+
+<script>
+const cards=document.querySelectorAll(".why-card");
+const io=new IntersectionObserver(entries=>{
+ entries.forEach((e,i)=>{
+  if(e.isIntersecting){
+    setTimeout(()=>e.target.classList.add("active"),i*120);
+  }
+ });
+},{threshold:.2});
+cards.forEach(c=>io.observe(c));
+setInterval(()=>{
+ cards.forEach((c,i)=>setTimeout(()=>{
+   c.classList.remove("shine");
+   void c.offsetWidth;
+   c.classList.add("shine");
+ },i*180));
+},9000);
+</script>
+
+
+
+
+
+    <!-- Add-Ons, Web and Script pricing charts layout -->
+   <section id="addons" class="py-20 bg-zinc-950 border-t border-zinc-900 relative overflow-hidden">
+
+    <!-- Ambient Background Glow -->
+    <div style="
+        position:absolute;
+        top:-120px;
+        left:-100px;
+        width:320px;
+        height:320px;
+        background:radial-gradient(circle,rgba(191,149,63,.10),transparent 70%);
+        filter:blur(80px);
+        animation:ambientGlow 14s ease-in-out infinite alternate;
+        pointer-events:none;">
+    </div>
+
+    <div style="
+        position:absolute;
+        right:-120px;
+        bottom:-120px;
+        width:280px;
+        height:280px;
+        background:radial-gradient(circle,rgba(191,149,63,.08),transparent 70%);
+        filter:blur(80px);
+        animation:ambientGlow2 16s ease-in-out infinite alternate;
+        pointer-events:none;">
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+
+        <div class="mb-10 text-center">
+
+            <!-- Premium Badge -->
+
+            <div style="
+                display:inline-flex;
+                align-items:center;
+                gap:10px;
+                position:relative;
+                overflow:hidden;
+                padding:8px 18px;
+                margin-bottom:18px;
+                border-radius:999px;
+                background:rgba(191,149,63,.05);
+                border:1px solid rgba(191,149,63,.18);
+                backdrop-filter:blur(12px);">
+
+                <!-- Moving Reflection -->
+
+                <span style="
+                    position:absolute;
+                    top:-70%;
+                    left:-180%;
+                    width:40%;
+                    height:240%;
+                    background:
+                    linear-gradient(
+                    110deg,
+                    transparent,
+                    rgba(255,255,255,.08),
+                    rgba(255,223,110,.25),
+                    transparent);
+                    transform:rotate(20deg);
+                    animation:badgeSweep 8s cubic-bezier(.4,0,.2,1) infinite;">
+                </span>
+
+                <i class="fa-solid fa-layer-group"
+                   style="
+                   color:#bf953f;
+                   animation:iconFloat 3s ease-in-out infinite;">
+                </i>
+
+                <span class="text-xs font-semibold tracking-[0.28em] uppercase text-[#bf953f]">
+
+                    Additional Operations
+
+                </span>
+
+            </div>
+
+            <!-- Heading -->
+
+<h3 class="serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center mx-auto relative"                style="
+                position:relative;
+                display:inline-block;
+                overflow:hidden;
+                text-shadow:0 0 12px rgba(191,149,63,.12);
+                animation:titleGlow 4s ease-in-out infinite;">
+
+                Add-On Services (From Phase 3 onwards)
+
+                <span style="
+                    position:absolute;
+                    top:-50%;
+                    left:-180%;
+                    width:35%;
+                    height:220%;
+                    background:
+                    linear-gradient(
+                    110deg,
+                    transparent,
+                    rgba(255,255,255,.08),
+                    rgba(255,223,110,.30),
+                    transparent);
+                    transform:rotate(18deg);
+                    animation:titleSweep 6.5s cubic-bezier(.4,0,.2,1) infinite;">
+                </span>
+
+            </h3>
+
+            <!-- Premium Divider -->
+
+            <div style="
+                width:70px;
+                height:2px;
+                margin:16px auto;
+                background:
+                linear-gradient(
+                90deg,
+                transparent,
+                #bf953f,
+                #f6d676,
+                #bf953f,
+                transparent);
+                box-shadow:0 0 15px rgba(191,149,63,.35);
+                animation:dividerGlow 3s ease-in-out infinite;">
+            </div>
+
+            <!-- Description -->
+
+            <p class="max-w-2xl mx-auto text-zinc-400 text-sm leading-7 text-center"
+   style="
+   letter-spacing:.5px;
+   animation:textFloat 5s ease-in-out infinite;">
+
+    For maximum impact, clients may consider the following additional services.
+
+</p>
+
+        </div>
+
+    </div>
+
+    <style>
+
+    @keyframes badgeSweep{
+
+        0%,20%{
+            left:-180%;
+        }
+
+        60%{
+            left:220%;
+        }
+
+        100%{
+            left:220%;
+        }
+
+    }
+
+    @keyframes titleSweep{
+
+        0%,15%{
+            left:-180%;
+        }
+
+        55%{
+            left:220%;
+        }
+
+        100%{
+            left:220%;
+        }
+
+    }
+
+    @keyframes titleGlow{
+
+        0%,100%{
+
+            text-shadow:0 0 10px rgba(191,149,63,.10);
+
+        }
+
+        50%{
+
+            text-shadow:0 0 22px rgba(191,149,63,.25);
+
+        }
+
+    }
+
+    @keyframes dividerGlow{
+
+        0%,100%{
+
+            opacity:.6;
+            transform:scaleX(.9);
+
+        }
+
+        50%{
+
+            opacity:1;
+            transform:scaleX(1.08);
+            box-shadow:0 0 20px rgba(191,149,63,.45);
+
+        }
+
+    }
+
+    @keyframes iconFloat{
+
+        0%,100%{
+
+            transform:translateY(0);
+
+        }
+
+        50%{
+
+            transform:translateY(-4px);
+
+        }
+
+    }
+
+    @keyframes textFloat{
+
+        0%,100%{
+
+            transform:translateY(0);
+            opacity:.85;
+
+        }
+
+        50%{
+
+            transform:translateY(-2px);
+            opacity:1;
+
+        }
+
+    }
+
+    @keyframes ambientGlow{
+
+        from{
+
+            transform:translate(0,0);
+
+        }
+
+        to{
+
+            transform:translate(80px,40px);
+
+        }
+
+    }
+
+    @keyframes ambientGlow2{
+
+        from{
+
+            transform:translate(0,0);
+
+        }
+
+        to{
+
+            transform:translate(-70px,-40px);
+
+        }
+
+    }
+
+    </style>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Digital Marketing and Channel Management Card -->
+          <!-- Targeted Channels -->
+<div class="rounded-2xl bg-zinc-900/20 backdrop-blur-xl border border-[#bf953f]/20 overflow-hidden">
+
+    <!-- Button -->
+    <button
+        onclick="toggleTargetChannels()"
+        class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#bf953f]/10 transition-all duration-500 group">
+
+        <div class="flex items-center gap-4 min-w-0 flex-1">
+
+            <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-[#bf953f] to-yellow-300 flex items-center justify-center shadow-lg shadow-yellow-500/20 group-hover:scale-110 transition shrink-0">
+
+                <i class="fa-solid fa-circle-nodes text-black text-lg"></i>
+
+            </div>
+
+            <div class="min-w-0">
+
+                <h3 class="text-white font-bold text-lg leading-snug">
+                    Targeted Channels
+                </h3>
+
+                <p class="text-zinc-400 text-sm leading-snug">
+                    Click to View Marketing Services
+                </p>
+
+            </div>
+
+        </div>
+
+        <i id="targetArrow"
+            class="fa-solid fa-chevron-down text-[#bf953f] text-xl transition-transform duration-500 ml-4 shrink-0">
+        </i>
+
+    </button>
+
+    <!-- Hidden Content -->
+    <div id="targetContent"
+        class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+
+        <div class="px-6 pb-6 border-t border-zinc-800">
+
+            <div class="space-y-4 text-zinc-300 text-sm leading-7 mt-5">
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-brands fa-instagram text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">Instagram channel creation and video publishing.</p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-brands fa-youtube text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">YouTube channel setup and publishing.</p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-bullhorn text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">Promotions, marketing & paid ads (Ad spend billed separately from management fees).</p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-chart-line text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">SEO Services (On-Page, Off-Page, Technical & Local SEO).</p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-star text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">Client reviews management (Google Reviews, Testimonials & Reputation Building).</p>
+                </div>
+
+                <div
+                    class="mt-6 rounded-xl border border-[#bf953f]/30 bg-gradient-to-r from-[#bf953f]/10 to-transparent p-5">
+
+                    <div class="flex items-start gap-3">
+
+                        <i class="fa-solid fa-money-bill-trend-up text-[#bf953f] text-xl mt-1 w-6 shrink-0 text-center"></i>
+
+                        <div class="flex-1 min-w-0">
+
+                            <h4 class="text-[#bf953f] font-semibold mb-2">
+                                Pricing Information
+                            </h4>
+
+                            <p class="text-zinc-300 leading-7">
+                                Charges will start from
+                                <strong class="text-white">₹20,000 - ₹3,00,000</strong>
+                                per month depending on the selected phase and platform requirements.
+                                Quotations will be provided before project commencement.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function toggleTargetChannels(){
+
+    const content=document.getElementById("targetContent");
+    const arrow=document.getElementById("targetArrow");
+
+    if(content.style.maxHeight && content.style.maxHeight!="0px"){
+
+        content.style.maxHeight="0px";
+        arrow.style.transform="rotate(0deg)";
+
+    }else{
+
+        content.style.maxHeight=content.scrollHeight+"px";
+        arrow.style.transform="rotate(180deg)";
+
+    }
+
+}
+
+</script>
+
+<!-- Custom Engineering Architecture Website design and Script pricing -->
+<!-- Website Design & Development -->
+<div class="rounded-2xl bg-zinc-900/20 backdrop-blur-xl border border-[#bf953f]/20 overflow-hidden">
+
+    <!-- Button -->
+    <button
+        onclick="toggleWebsiteService()"
+        class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#bf953f]/10 transition-all duration-500 group">
+
+        <div class="flex items-center gap-4 min-w-0 flex-1">
+
+            <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-[#bf953f] to-yellow-300 flex items-center justify-center shadow-lg shadow-yellow-500/20 group-hover:scale-110 transition shrink-0">
+
+                <i class="fa-solid fa-earth-americas text-black text-lg"></i>
+
+            </div>
+
+            <div class="min-w-0">
+
+                <h3 class="text-white font-bold text-lg leading-snug">
+                    Website Design & Development
+                </h3>
+
+                <p class="text-zinc-400 text-sm leading-snug">
+                    Click to View Website Services
+                </p>
+
+            </div>
+
+        </div>
+
+        <i id="websiteArrow"
+            class="fa-solid fa-chevron-down text-[#bf953f] text-xl transition-transform duration-500 ml-4 shrink-0">
+        </i>
+
+    </button>
+
+    <!-- Hidden Content -->
+    <div id="websiteContent"
+        class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+
+        <div class="px-6 pb-6 border-t border-zinc-800">
+
+            <div class="space-y-4 text-zinc-300 text-sm leading-7 mt-5">
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-laptop-code text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">Premium custom website design tailored to your business and brand identity.</p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-mobile-screen-button text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">Fully responsive websites optimized for desktop, tablet, and mobile devices.</p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-palette text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">Luxury UI/UX design with premium graphics, smooth animations, and modern layouts.</p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-film text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">Interactive motion graphics, cinematic effects, premium transitions, and engaging visual experiences.</p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-gauge-high text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">Performance optimized, SEO-friendly, secure, and scalable development.</p>
+                </div>
+
+                <div
+                    class="mt-6 rounded-xl border border-[#bf953f]/30 bg-gradient-to-r from-[#bf953f]/10 to-transparent p-5">
+
+                    <div class="flex items-start gap-3">
+
+                        <i class="fa-solid fa-money-check-dollar text-[#bf953f] text-xl mt-1 w-6 shrink-0 text-center"></i>
+
+                        <div class="flex-1 min-w-0">
+
+                            <h4 class="text-[#bf953f] font-semibold mb-2">
+                                Pricing Information
+                            </h4>
+
+                            <p class="text-zinc-300 leading-7">
+                                Website Design & Development pricing starts from
+                                <strong class="text-white">₹35,000 - ₹4,50,000</strong>.
+                                Quotations will be provided based on project requirements, graphics, motion features, functionality, integrations, and overall project scope.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function toggleWebsiteService(){
+
+    const content=document.getElementById("websiteContent");
+    const arrow=document.getElementById("websiteArrow");
+
+    if(content.style.maxHeight && content.style.maxHeight!="0px"){
+
+        content.style.maxHeight="0px";
+        arrow.style.transform="rotate(0deg)";
+
+    }else{
+
+        content.style.maxHeight=content.scrollHeight+"px";
+        arrow.style.transform="rotate(180deg)";
+
+    }
+
+}
+
+</script>
+
+<!-- Script Charges -->
+<div class="rounded-2xl bg-zinc-900/20 backdrop-blur-xl border border-[#bf953f]/20 overflow-hidden">
+
+    <!-- Button -->
+    <button
+        onclick="toggleScriptCharges()"
+        class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#bf953f]/10 transition-all duration-500 group">
+
+        <div class="flex items-center gap-4 min-w-0 flex-1">
+
+            <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-[#bf953f] to-yellow-300 flex items-center justify-center shadow-lg shadow-yellow-500/20 group-hover:scale-110 transition shrink-0">
+
+                <i class="fa-solid fa-scroll text-black text-lg"></i>
+
+            </div>
+
+            <div class="min-w-0">
+
+                <h3 class="text-white font-bold text-lg leading-snug">
+                    Script Charges
+                </h3>
+
+                <p class="text-zinc-400 text-sm leading-snug">
+                    Click to View Script Pricing
+                </p>
+
+            </div>
+
+        </div>
+
+        <i id="scriptArrow"
+            class="fa-solid fa-chevron-down text-[#bf953f] text-xl transition-transform duration-500 ml-4 shrink-0">
+        </i>
+
+    </button>
+
+    <!-- Hidden Content -->
+    <div id="scriptContent"
+        class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+
+        <div class="px-6 pb-6 border-t border-zinc-800">
+
+            <div class="space-y-4 text-zinc-300 text-sm leading-7 mt-5">
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-pen-nib text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">
+                        Content scripts, when not included in any package, will be billed separately at
+                        <strong class="text-white">₹1,500 - ₹2,500 per script</strong>,
+                        depending on the script length, research requirements, and overall complexity.
+                    </p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-file-signature text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">
+                        If clients provide their own scripts, then for packages where content scripts are included,
+                        videos will be produced and delivered without any additional script-writing charges.
+                    </p>
+                </div>
+
+                <div
+                    class="mt-6 rounded-xl border border-[#bf953f]/30 bg-gradient-to-r from-[#bf953f]/10 to-transparent p-5">
+
+                    <div class="flex items-start gap-3">
+
+                        <i class="fa-solid fa-lightbulb text-[#bf953f] text-xl mt-1 w-6 shrink-0 text-center"></i>
+
+                        <div class="flex-1 min-w-0">
+
+                            <h4 class="text-[#bf953f] font-semibold mb-2">
+                                Creative Note
+                            </h4>
+
+                            <p class="text-zinc-300 leading-7">
+                                Professionally written scripts are tailored to your business, target audience,
+                                marketing objectives, and platform requirements to maximize engagement and
+                                storytelling quality.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function toggleScriptCharges(){
+
+    const content=document.getElementById("scriptContent");
+    const arrow=document.getElementById("scriptArrow");
+
+    if(content.style.maxHeight && content.style.maxHeight!="0px"){
+
+        content.style.maxHeight="0px";
+        arrow.style.transform="rotate(0deg)";
+
+    }else{
+
+        content.style.maxHeight=content.scrollHeight+"px";
+        arrow.style.transform="rotate(180deg)";
+
+    }
+
+}
+
+</script>
+
+<!-- Drone Charges -->
+<div class="rounded-2xl bg-zinc-900/20 backdrop-blur-xl border border-[#bf953f]/20 overflow-hidden">
+
+    <!-- Button -->
+    <button
+        onclick="toggleDroneCharges()"
+        class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#bf953f]/10 transition-all duration-500 group">
+
+        <div class="flex items-center gap-4 min-w-0 flex-1">
+
+            <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-[#bf953f] to-yellow-300 flex items-center justify-center shadow-lg shadow-yellow-500/20 group-hover:scale-110 transition shrink-0">
+
+                <i class="fa-solid fa-helicopter text-black text-lg"></i>
+
+            </div>
+
+            <div class="min-w-0">
+
+                <h3 class="text-white font-bold text-lg leading-snug">
+                    Drone Charges
+                </h3>
+
+                <p class="text-zinc-400 text-sm leading-snug">
+                    Click to View Drone & Aerial Service Details
+                </p>
+
+            </div>
+
+        </div>
+
+        <i id="droneArrow"
+            class="fa-solid fa-chevron-down text-[#bf953f] text-xl transition-transform duration-500 ml-4 shrink-0">
+        </i>
+
+    </button>
+
+    <!-- Hidden Content -->
+    <div id="droneContent"
+        class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+
+        <div class="px-6 pb-6 border-t border-zinc-800">
+
+            <div class="space-y-4 text-zinc-300 text-sm leading-7 mt-5">
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-helicopter text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">
+                        Drone shoots are <strong class="text-white">not included</strong> in the standard packages.
+                        From <strong class="text-white">Phase 4 onwards</strong>, one drone shoot slot per week is included.
+                    </p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-camera-retro text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">
+                        For <strong class="text-white">Phases 1, 2 & 3</strong>, if aerial footage is required,
+                        drone services will be charged separately.
+                    </p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-money-bill-wave text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">
+                        Typical drone charges range from
+                        <strong class="text-white">₹5,000 - ₹10,000 per session</strong>,
+                        including standard aerial and FPV drone footage.
+                        Pricing depends on location, duration, permissions and shoot complexity.
+                    </p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-building text-[#bf953f] mt-1 w-5 shrink-0 text-center"></i>
+                    <p class="flex-1">
+                        Enterprise drone solutions including
+                        Industrial Inspections,
+                        Thermal Imaging,
+                        Construction Monitoring,
+                        and 3D Aerial Mapping
+                        are available under custom quotations.
+                    </p>
+                </div>
+
+                <div
+                    class="mt-6 rounded-xl border border-[#bf953f]/30 bg-gradient-to-r from-[#bf953f]/10 to-transparent p-5">
+
+                    <div class="flex items-start gap-3">
+
+                        <i class="fa-solid fa-shield-halved text-[#bf953f] text-xl mt-1 w-6 shrink-0 text-center"></i>
+
+                        <div class="flex-1 min-w-0">
+
+                            <h4 class="text-[#bf953f] font-semibold mb-2">
+                                DGCA Compliance
+                            </h4>
+
+                            <p class="text-zinc-300 leading-7">
+                                Clients in <strong>Phases 1, 2 & 3</strong> are responsible for obtaining
+                                the necessary permissions required for drone operations at their selected
+                                locations. Drone flights will be conducted only in accordance with applicable
+                                DGCA regulations and local authority guidelines.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function toggleDroneCharges(){
+
+    const content=document.getElementById("droneContent");
+    const arrow=document.getElementById("droneArrow");
+
+    if(content.style.maxHeight && content.style.maxHeight!="0px"){
+
+        content.style.maxHeight="0px";
+        arrow.style.transform="rotate(0deg)";
+
+    }else{
+
+        content.style.maxHeight=content.scrollHeight+"px";
+        arrow.style.transform="rotate(180deg)";
+
+    }
+
+}
+
+</script>
+
+</script>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Operational Policies (Travel & Payments) -->
+    <section id="policies" class="py-24 max-w-5xl mx-auto px-6 border-t border-zinc-900">
+        <div class="text-center mb-16">
+            <h2 class="serif-title text-3xl font-bold text-white">Standard  Policies</h2>
+            <div class="w-12 h-[1px] bg-zinc-800 mx-auto mt-4"></div>
+        </div>
+
+        <div class<!-- Travel Policy -->
+<div class="rounded-2xl bg-zinc-900/20 backdrop-blur-xl border border-[#bf953f]/20 overflow-hidden">
+
+    <!-- Button -->
+    <button
+        onclick="toggleTravelPolicy()"
+        class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#bf953f]/10 transition-all duration-500 group">
+
+        <div class="flex items-center gap-4">
+
+            <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-[#bf953f] to-yellow-300 flex items-center justify-center shadow-lg shadow-yellow-500/20 group-hover:scale-110 transition">
+
+                <i class="fa-solid fa-plane-departure text-black text-lg"></i>
+
+            </div>
+
+            <div>
+
+                <h3 class="text-white font-bold text-lg">
+                    Travel Policy
+                </h3>
+
+                <p class="text-zinc-400 text-sm">
+                    Click to View Complete Travel Terms
+                </p>
+
+            </div>
+
+        </div>
+
+        <i id="travelArrow"
+            class="fa-solid fa-chevron-down text-[#bf953f] text-xl transition-transform duration-500">
+        </i>
+
+    </button>
+
+    <!-- Hidden Content -->
+
+    <div id="travelContent"
+        class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+
+        <div class="px-6 pb-6 border-t border-zinc-800">
+
+            <div class="space-y-4 text-zinc-300 text-sm leading-7 mt-5">
+
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-location-dot text-[#bf953f] mt-1"></i>
+                    <p>Shoots will be conducted at the client's location. No travel charges apply if the shoot is at the client's premises.</p>
+                </div>
+
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-car-side text-[#bf953f] mt-1"></i>
+                    <p>If the client requires outdoor shoots at other locations, travel allowances and accommodation (if required) must be provided.</p>
+                </div>
+
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-route text-[#bf953f] mt-1"></i>
+                    <p>For PHASES 1, 2 and 3, all outdoor shoots beyond the client's premises will incur travel charges borne by the client.</p>
+                </div>
+
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-map-location-dot text-[#bf953f] mt-1"></i>
+                    <p>For PHASES 4 and 5, shoots within a 10 km radius of the client's location are free. Beyond 10 km, travel allowances must be paid by the client.</p>
+                </div>
+
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-money-bill-wave text-[#bf953f] mt-1"></i>
+                    <p>Travel charges will be calculated based on distance, transport and accommodation (if required), and agreed upon before scheduling.</p>
+                </div>
+
+                <div
+                    class="mt-6 rounded-xl border border-[#bf953f]/30 bg-gradient-to-r from-[#bf953f]/10 to-transparent p-5">
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-crown text-[#bf953f] text-xl mt-1"></i>
+
+                        <div>
+
+                            <h4 class="text-[#bf953f] font-semibold mb-2">
+                                Freelancing Special Benefit
+                            </h4>
+
+                            <p class="text-zinc-300 leading-7">
+                                No travel charges apply for reaching the client's premises within the city (20 km) and returning after the shoot. If travel exceeds this limit, accommodation (if required) will be provided by the client.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function toggleTravelPolicy(){
+
+    const content=document.getElementById("travelContent");
+    const arrow=document.getElementById("travelArrow");
+
+    if(content.style.maxHeight && content.style.maxHeight!="0px"){
+
+        content.style.maxHeight="0px";
+        arrow.style.transform="rotate(0deg)";
+
+    }else{
+
+        content.style.maxHeight=content.scrollHeight+"px";
+        arrow.style.transform="rotate(180deg)";
+
+    }
+
+}
+
+</script>
+           <!-- Payment Policy -->
+<div class="rounded-2xl bg-zinc-900/20 backdrop-blur-xl border border-[#bf953f]/20 overflow-hidden">
+
+    <!-- Button -->
+    <button
+        onclick="togglePaymentPolicy()"
+        class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#bf953f]/10 transition-all duration-500 group">
+
+        <div class="flex items-center gap-4">
+
+            <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-[#bf953f] to-yellow-300 flex items-center justify-center shadow-lg shadow-yellow-500/20 group-hover:scale-110 transition">
+
+                <i class="fa-solid fa-credit-card text-black text-lg"></i>
+
+            </div>
+
+            <div>
+
+                <h3 class="text-white font-bold text-lg">
+                    Payment Policy
+                </h3>
+
+                <p class="text-zinc-400 text-sm">
+                    Click to View Complete Payment Terms
+                </p>
+
+            </div>
+
+        </div>
+
+        <i id="paymentArrow"
+            class="fa-solid fa-chevron-down text-[#bf953f] text-xl transition-transform duration-500">
+        </i>
+
+    </button>
+
+    <!-- Hidden Content -->
+    <div id="paymentContent"
+        class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+
+        <div class="px-6 pb-6 border-t border-zinc-800">
+
+            <div class="space-y-4 text-zinc-300 text-sm leading-7 mt-5">
+
+                <div
+                    class="rounded-xl border border-[#bf953f]/30 bg-gradient-to-r from-[#bf953f]/10 to-transparent p-5">
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-circle-info text-[#bf953f] text-xl mt-1"></i>
+
+                        <div>
+
+                            <h4 class="text-[#bf953f] font-semibold mb-2">
+                                Important Notice
+                            </h4>
+
+                            <p>
+                                Monthly charges are payable regardless of whether shoots are conducted or not.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-calendar-check text-[#bf953f] mt-1"></i>
+                    <p>Our production team remains available every week according to the selected service phase.</p>
+                </div>
+
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-clock text-[#bf953f] mt-1"></i>
+                    <p>If the client does not schedule work during a particular week or fails to provide a suitable time slot, the monthly service fee remains applicable.</p>
+                </div>
+
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-handshake text-[#bf953f] mt-1"></i>
+                    <p>The monthly plan secures dedicated production availability, creative planning, editing resources and reserved scheduling throughout the agreed service period.</p>
+                </div>
+
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-wallet text-[#bf953f] mt-1"></i>
+                    <p>Payments should be completed on or before the agreed billing date to ensure uninterrupted service and project scheduling.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function togglePaymentPolicy(){
+
+    const content=document.getElementById("paymentContent");
+    const arrow=document.getElementById("paymentArrow");
+
+    if(content.style.maxHeight && content.style.maxHeight!="0px"){
+
+        content.style.maxHeight="0px";
+        arrow.style.transform="rotate(0deg)";
+
+    }else{
+
+        content.style.maxHeight=content.scrollHeight+"px";
+        arrow.style.transform="rotate(180deg)";
+
+    }
+
+}
+
+
+</script>
+<!-- =======================================================
+FOUNDER SECTION
+Place Above THANK YOU Section
+======================================================= -->
+
+<section class="max-w-6xl mx-auto px-6 py-14">
+
+<div class="relative overflow-hidden rounded-2xl border border-[#bf953f]/20 bg-gradient-to-br from-[#080808] via-[#101010] to-[#080808] p-8">
+
+    <!-- Background Glow -->
+
+    <div class="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-[#bf953f]/10 blur-[90px] animate-pulse"></div>
+
+    <div class="absolute -bottom-16 -left-16 w-60 h-60 rounded-full bg-[#bf953f]/5 blur-[80px]"></div>
+
+    <div class="relative z-10 flex flex-col lg:flex-row items-center gap-8">
+
+        <!-- Left -->
+
+        <div class="flex-1">
+
+            <span class="uppercase tracking-[4px] text-[11px] text-[#bf953f] font-semibold">
+
+                Founder & Creative Director
+
+            </span>
+
+            <h2 class="serif-title text-4xl mt-2 font-bold text-white">
+
+                Manzoor Shaik
+
+            </h2>
+
+            <div class="w-24 h-[2px] bg-gradient-to-r from-[#bf953f] via-[#f6d676] to-transparent mt-4 mb-6"></div>
+
+            <p class="text-zinc-300 leading-8 text-sm">
+
+                With <span class="text-white font-semibold">6+ Years of Professional Industry Experience</span>,
+                specializing in <span class="text-[#bf953f]">cinematography, photography,
+                professional video editing, brand storytelling, commercial productions,
+                corporate films, digital marketing visuals and creative direction.</span>
+
+                Every project is crafted with a cinematic approach,
+                premium production quality and attention to detail,
+                ensuring every brand stands out with powerful visual storytelling.
+
+            </p>
+
+        </div>
+
+        <!-- Right -->
+
+        <div class="lg:w-[340px]">
+
+            <div class="rounded-xl border border-[#bf953f]/20 bg-zinc-900/60 backdrop-blur-xl p-6">
+
+                <h3 class="text-white font-semibold text-lg mb-5">
+
+                    Professional Expertise
+
+                </h3>
+
+                <div class="space-y-4 text-sm text-zinc-300">
+
+                    <div class="flex items-center gap-3">
+
+                        <i class="fa-solid fa-video text-[#bf953f]"></i>
+
+                        Professional Cinematography
+
+                    </div>
+
+                    <div class="flex items-center gap-3">
+
+                        <i class="fa-solid fa-camera-retro text-[#bf953f]"></i>
+
+                        Commercial Photography
+
+                    </div>
+
+                    <div class="flex items-center gap-3">
+
+                        <i class="fa-solid fa-film text-[#bf953f]"></i>
+
+                        Professional Video Editing
+
+                    </div>
+
+                    <div class="flex items-center gap-3">
+
+                        <i class="fa-solid fa-cube text-[#bf953f]"></i>
+
+                        Motion Graphics & 3D Visuals
+
+                    </div>
+
+                    <div class="flex items-center gap-3">
+
+                        <i class="fa-solid fa-bullhorn text-[#bf953f]"></i>
+
+                        Brand Marketing Content
+
+                    </div>
+
+                    <div class="flex items-center gap-3">
+
+                        <i class="fa-solid fa-award text-[#bf953f]"></i>
+
+                        6+ Years Industry Experience
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+                <!-- Premium Thank You -->
+<div class="pt-16 pb-8 text-center relative overflow-hidden">
+
+    <!-- Decorative Glow -->
+    <div class="absolute inset-0 flex justify-center pointer-events-none">
+        <div class="w-72 h-72 bg-[#bf953f]/10 rounded-full blur-[90px] glow-bg"></div>
+    </div>
+
+    <!-- Decorative Line -->
+    <div class="flex items-center justify-center gap-4 mb-8 relative z-10">
+
+        <div class="w-20 h-px bg-gradient-to-r from-transparent via-[#bf953f] to-transparent glow-line"></div>
+
+        <i class="fa-solid fa-star text-[#bf953f] text-sm thank-star"></i>
+
+        <div class="w-20 h-px bg-gradient-to-r from-transparent via-[#bf953f] to-transparent glow-line"></div>
+
+    </div>
+
+    <!-- Thank You -->
+
+    <h2 class="serif-title thank-title relative z-10">
+
+        THANK YOU
+
+    </h2>
+
+    <p class="text-zinc-400 mt-4 tracking-[5px] uppercase text-xs relative z-10 thank-sub">
+
+        We Look Forward To Creating Something Extraordinary Together
+
+    </p>
+
+</div>
+
+
+<style>
+
+/* ===========================================
+THANK YOU PREMIUM ANIMATION
+===========================================*/
+
+.thank-title{
+
+position:relative;
+
+display:inline-block;
+
+overflow:hidden;
+
+animation:titleGlow 4s ease-in-out infinite;
+
+}
+
+/* Gold Reflection */
+
+.thank-title::after{
+
+content:"";
+
+position:absolute;
+
+top:-60%;
+
+left:-180%;
+
+width:40%;
+
+height:220%;
+
+background:
+
+linear-gradient(
+
+110deg,
+
+transparent,
+
+rgba(255,255,255,.08),
+
+rgba(255,220,120,.45),
+
+rgba(255,255,255,.08),
+
+transparent
+
+);
+
+transform:
+
+translateX(0)
+
+skewX(-20deg);
+
+filter:blur(2px);
+
+animation:titleSweep 6.5s cubic-bezier(.4,0,.2,1) infinite;
+
+}
+
+/* Star */
+
+.thank-star{
+
+animation:
+
+starRotate 7s linear infinite,
+
+starGlow 3s ease-in-out infinite;
+
+}
+
+/* Divider */
+
+.glow-line{
+
+animation:lineGlow 3s ease-in-out infinite;
+
+}
+
+/* Subtitle */
+
+.thank-sub{
+
+animation:
+
+subFloat 5s ease-in-out infinite;
+
+}
+
+/* Background */
+
+.glow-bg{
+
+animation:
+
+bgPulse 6s ease-in-out infinite;
+
+}
+
+/* ================= Animations ================= */
+
+@keyframes titleSweep{
+
+0%,15%{
+
+transform:
+
+translateX(-260%)
+
+skewX(-20deg);
+
+}
+
+55%{
+
+transform:
+
+translateX(340%)
+
+skewX(-20deg);
+
+}
+
+100%{
+
+transform:
+
+translateX(340%)
+
+skewX(-20deg);
+
+}
+
+}
+
+@keyframes titleGlow{
+
+0%,100%{
+
+text-shadow:
+
+0 0 0 rgba(191,149,63,0);
+
+}
+
+50%{
+
+text-shadow:
+
+0 0 16px rgba(191,149,63,.35);
+
+}
+
+}
+
+@keyframes starRotate{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+@keyframes starGlow{
+
+0%,100%{
+
+filter:
+
+drop-shadow(0 0 0 rgba(191,149,63,0));
+
+}
+
+50%{
+
+filter:
+
+drop-shadow(0 0 12px rgba(191,149,63,.8));
+
+}
+
+}
+
+@keyframes lineGlow{
+
+0%,100%{
+
+opacity:.55;
+
+}
+
+50%{
+
+opacity:1;
+
+box-shadow:
+
+0 0 12px rgba(191,149,63,.7);
+
+}
+
+}
+
+@keyframes subFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+opacity:.85;
+
+}
+
+50%{
+
+transform:translateY(-3px);
+
+opacity:1;
+
+}
+
+}
+
+@keyframes bgPulse{
+
+0%,100%{
+
+transform:scale(1);
+
+opacity:.35;
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+opacity:.65;
+
+}
+
+}
+
+</style>
+    <!-- Gold Sparkles -->
+    <div class="flex justify-center gap-5 mt-8 relative z-10">
+
+        <i class="fa-solid fa-diamond sparkle"></i>
+        <i class="fa-solid fa-star sparkle" style="animation-delay:.3s;"></i>
+        <i class="fa-solid fa-crown sparkle" style="animation-delay:.6s;"></i>
+        <i class="fa-solid fa-star sparkle" style="animation-delay:.9s;"></i>
+        <i class="fa-solid fa-diamond sparkle" style="animation-delay:1.2s;"></i>
+
+    </div>
+
+</div>
+    </section>
+
+    <!-- New Corporate Contact Info Section -->
+    <section id="contact" class="py-20 bg-black border-t border-zinc-900 relative">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
+            <div>
+                <span class="text-xs uppercase tracking-[0.3em] text-[#bf953f] block mb-2">Dear Corporate's,influecers,creators and business of all sizes </span>
+                <h2 class="serif-title text-3xl sm:text-4xl font-bold text-white">Initiate Your Campaign Pipeline</h2>
+                <p class="text-zinc-500 text-xs mt-2 max-w-lg mx-auto">Get in touch directly to set up scheduled briefings, receive formalized invoice metrics, or confirm operational slot allocations.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto pt-4">
+                <a href="mailto:keyframesmedia6660@gmail.com" class="p-6 rounded-xl bg-zinc-950 border border-zinc-900 hover:border-[#bf953f]/40 group transition-all flex flex-col items-center gap-2">
+                    <i class="fa-solid fa-envelope text-xl text-[#bf953f] group-hover:scale-110 transition-transform"></i>
+                    <span class="text-[10px] uppercase text-zinc-500 tracking-wider">Official Email </span>
+                    <span class="text-sm font-semibold text-white">keyframesmedia6660@gmail.com</span>
+                </a>
+                
+                <a href="tel:000000000" class="p-6 rounded-xl bg-zinc-950 border border-zinc-900 hover:border-[#bf953f]/40 group transition-all flex flex-col items-center gap-2">
+                    <i class="fa-solid fa-phone text-xl text-[#bf953f] group-hover:scale-110 transition-transform"></i>
+                    <span class="text-[10px] uppercase text-zinc-500 tracking-wider">Executive Direct Mobile</span>
+                    <span class="text-sm font-semibold text-white">cell 000000000</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ===========================
+CUSTOM QUOTE SECTION
+=========================== -->
+
+<section id="quote" class="py-6 px-2 border-t border-zinc-900 relative overflow-hidden">
+
+    <!-- Background Glow -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-[#bf953f]/5 blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto relative z-10">
+
+        <div class="text-center mb-14">
+
+            <span class="text-xs tracking-[6px] uppercase text-[#bf953f]">
+                Get Your Custom Quote
+            </span>
+
+            <h2 class="serif-title text-4xl md:text-5xl font-bold text-white mt-3">
+
+                Tell Us About Your Project
+
+            </h2>
+
+            <p class="text-zinc-400 mt-4 max-w-2xl mx-auto">
+
+                Every project is unique. Fill in the details below and our team will prepare the best package and pricing based on your requirements.
+
+            </p>
+
+        </div>
+
+        <div class="premium-card rounded-none md:rounded-3xl p-8 md:p-10 w-full">
+
+            <form class="grid md:grid-cols-2 gap-6">
+
+                <div>
+                    <label class="block text-sm text-zinc-400 mb-2">
+                        Full Name
+                    </label>
+
+                    <input type="text"
+                    placeholder="Enter your name"
+                    class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none transition">
+                </div>
+
+                <div>
+                    <label class="block text-sm text-zinc-400 mb-2">
+                        Phone Number
+                    </label>
+
+                    <input type="tel"
+                    placeholder="+91 XXXXX XXXXX"
+                    class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none transition">
+                </div>
+
+                <div>
+                    <label class="block text-sm text-zinc-400 mb-2">
+                        Event / Business Name
+                    </label>
+
+                    <input type="text"
+                    placeholder="corporate/ Restaurant / Brand/ business"
+                    class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none transition">
+                </div>
+
+                <div>
+                    <label class="block text-sm text-zinc-400 mb-2">
+                        Preferred Package
+                    </label>
+
+                    <select class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none">
+
+                        <option>Select Package</option>
+                        <option>Phase 01 - Starter</option>
+                        <option>Phase 02 - Growth</option>
+                        <option>Phase 03 - Advanced</option>
+                        <option>Phase 04 - Premium</option>
+                        <option>Phase 05 - Enterprise</option>
+                        <option>Need Suggestion</option>
+
+                    </select>
+
+                </div>
+
+                <div>
+
+                    <label class="block text-sm text-zinc-400 mb-2">
+
+                        Estimated Budget
+
+                    </label>
+
+                    <select class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none">
+
+                        <option>Select Budget</option>
+                        <option>Below ₹25,000</option>
+                        <option>₹25,000 - ₹50,000</option>
+                        <option>₹50,000 - ₹1,00,000</option>
+                        <option>₹1,00,000+</option>
+
+                    </select>
+
+                </div>
+
+                <div>
+
+                    <label class="block text-sm text-zinc-400 mb-2">
+
+                        Event Date
+
+                    </label>
+
+                    <input type="date"
+
+                    class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none">
+
+                </div>
+
+                <div class="md:col-span-2">
+
+                    <label class="block text-sm text-zinc-400 mb-2">
+
+                        Project Requirements
+
+                    </label>
+
+                    <textarea rows="5"
+
+                    placeholder="Tell us about your project..."
+
+                    class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none resize-none"></textarea>
+
+                </div>
+
+                <div class="md:col-span-2 text-center mt-4">
+
+                    <button
+
+                    type="submit"
+
+                    class="shimmer-btn bg-gradient-to-r from-[#bf953f] via-[#d9b55f] to-[#bf953f] text-black font-bold tracking-wider px-10 py-4 rounded-full transition hover:scale-105">
+
+                        <i class="fa-solid fa-paper-plane mr-2"></i>
+
+                        GET MY CUSTOM OFFER
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+        Premium Footer
+========================= -->
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-zinc-950 border-t border-zinc-900 py-2">
+
+<div class="max-w-5xl mx-auto px-6 py-2 text-center flex flex-col items-center">
+
+        <!-- Logo -->
+
+        <img
+            src="logo.png"
+            alt="Key Frames Media Logo"
+            class="brand-logo-footer">
+
+        <!-- Company -->
+
+        <h3 class="footer-title">
+
+            KEY FRAMES MEDIA • VIDEO MARKETING
+
+        </h3>
+
+        <!-- Cities -->
+
+        <p class="footer-cities">
+
+            Hyderabad • Bengaluru • Chennai • Nellore • Vizag
+
+        </p>
+
+        <!-- Gold Line -->
+
+        <div class="footer-divider"></div>
+
+        <!-- Copyright -->
+
+        <p class="footer-copy">
+
+            © 2026 <span>KEY FRAMES MEDIA</span>. All Rights Reserved.
+
+        </p>
+
+        <p class="footer-copy2">
+
+            Designed with Corporate Aesthetic & Advanced Motion Frameworks.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<style>
+
+/* ==========================
+   Premium Footer Logo
+========================== */
+
+/*======================================
+            FOOTER
+======================================*/
+
+.brand-logo-footer{
+
+    width:250px;
+    max-width:100%;
+    display:block;
+
+    margin:0 auto;
+
+    height:auto;
+
+    object-fit:contain;
+
+    position:relative;
+
+    left:0;
+
+    opacity:1;
+
+    animation:footerGlow 1s ease-in-out infinite;
+
+
+
+    transition:.3s;
+
+    position:relative;
+
+    top: 19px;      /* Move logo down */
+
+}
+
+.brand-logo-footer:hover{
+
+    transform:scale(1.20);
+
+}
+
+.footer-title{
+
+    color:#e7e7e7;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:6px;
+    text-transform:uppercase;
+
+    margin-top:0px;
+    margin-bottom:5px;
+    line-height:1.1;
+
+}
+
+.footer-cities{
+
+    color:rgb(192, 192, 192);
+    font-size:9px;
+    letter-spacing:2px;
+    margin-top:0;
+    margin-bottom:8px;
+
+}
+
+.footer-divider{
+
+    width:130px;
+
+    height:2px;
+
+    margin:0 auto 10px;
+
+    background:linear-gradient(to right,
+    transparent,
+    #bf953f,
+    #f7d676,
+    #bf953f,
+    transparent);
+
+}
+
+.footer-copy{
+
+    color:#8b8b8b;
+
+    font-size:10px;
+
+    margin-bottom:6px;
+
+}
+
+.footer-copy span{
+
+    color:rgb(139, 139, 139);
+
+    font-weight:600;
+
+}
+
+.footer-copy2{
+
+    color:#666;
+
+    font-size:10px;
+
+}
+
+/*==========================
+        Logo Glow
+==========================*/
+
+@keyframes footerGlow{
+
+    0%,100%{
+
+        filter:drop-shadow(0 0 8px rgba(191,149,63,.18));
+
+    }
+
+    50%{
+
+        filter:
+        drop-shadow(0 0 18px rgba(191,149,63,.45))
+        drop-shadow(0 0 30px rgba(247,214,118,.18));
+
+    }
+
+}
+
+/*==========================
+        Tablet
+==========================*/
+
+@media(max-width:1024px){
+
+.brand-logo-footer{
+
+    width:200px;
+    margin:0 auto 12px;   /* Space below logo */
+    top:0;                /* Reset if to was used */
+
+}
+
+.footer-title{
+
+    font-size:13px;
+    letter-spacing:5px;
+    margin-top:0;
+    margin-bottom:8px;
+
+}
+
+.footer-cities{
+
+    font-size:13px;
+    letter-spacing:2px;
+    margin-top:0;
+
+}
+/* mobile */ 
+
+	/* mobile */
+}
+
+@media(max-width:1000px){
+
+.brand-logo-footer{
+
+    width:250px;
+
+    margin-top:20px;      /* Moves logo down */
+    margin-bottom:8px;    /* Space between logo and title */
+
+}
+
+}
+.footer-title{
+
+font-size:11px;
+
+letter-spacing:3px;
+
+line-height:1.8;
+
+}
+
+.footer-cities{
+
+font-size:9px;
+
+letter-spacing:1px;
+
+margin-bottom:2px;
+
+}
+
+.footer-divider{
+
+width:190px;
+
+margin-bottom:10px;
+
+}
+
+.footer-copy{
+
+font-size:8px;
+
+}
+
+.footer-copy2{
+
+font-size:10px;
+
+}
+
+}
+
+</style>
+
+        <!-- Footer Text -->
+
+        <p class="tracking-widest uppercase font-semibold text-zinc-500 text-[9px]">
+
+            
+
+        </p>
+
+        <p>
+
+
+        </p>
+
+    </div>
+
+</footer>
+
+<script>
+// Premium motion JS: insert JS provided earlier here.
+</script>
+</body>
+</html>
