@@ -1684,211 +1684,267 @@ opacity:0;
      IMPORTANT PRODUCTION NOTE
 ========================================== -->
 
-<div class="w-full mt-2 mb-1 border-t border-zinc-800 pt-1">
+<div class="w-full mt-3 mb-2 border-t border-zinc-800 pt-4">
 
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 relative overflow-hidden">
 
-		<!-- Heading -->
+        <!-- Light Sweep -->
 
-		<div class="flex items-center gap-1 mb-1">
+        <div class="light-sweep"></div>
 
-		    <i class="fa-solid fa-circle-info text-[#bf953f] text-sm lg:text-base"></i>
+        <!-- Heading -->
 
-		    <h3 class="text-[#f7d676] text-sm font-bold uppercase tracking-[5px] whitespace-nowrap">
+        <div class="flex items-center gap-2 mb-3">
 
-		        IMPORTANT PRODUCTION NOTE
+            <i class="fa-solid fa-circle-info note-icon"></i>
 
-		    </h3>
+            <h3 class="note-title">
 
-		    <div class="flex-1 h-px bg-zinc-800"></div>
+                IMPORTANT PRODUCTION NOTE
 
-		</div>
+            </h3>
 
-		<!-- Note -->
+            <div class="flex-1 h-px bg-zinc-800"></div>
 
-		<p class="text-zinc-300 text-[10px] leading-7 font-normal">
+        </div>
 
-		    All PHASES include only video production and final delivery.
-		    Services including Publicity, Paid Advertisements, Channel Management,
-		    Website Development, and Social Media Handling are NOT INCLUDED in
-		    these packages.
+        <!-- Note -->
 
-		    These services are available separately under the ADD-ON SERVICES section.
+        <p class="note-text">
 
-		</p>
+            All PHASES include only video production and final delivery. Services including Publicity, Paid Advertisements,
+            Channel Management, Website Development and Social Media Handling are <strong>NOT INCLUDED</strong> in these
+            packages. These services are available separately under the <strong>ADD-ON SERVICES</strong> section.
 
-		</div>
+        </p>
 
-		</div>
-<style>
+    </div>
 
-/* Optional - makes the paragraph use the full width on desktop */
-@media (min-width:1024px){
-
-    .max-w-7xl p{
-        max-width:100%;
-    }
-
-}
-
-</style>
+</div>
 
 <style>
 
-.important-note{
+/*==================================
+      IMPORTANT NOTE
+==================================*/
 
-    position:inherit;
-    overflow:hidden;
+.note-title{
 
-    margin-top:32px;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:4px;
+    text-transform:uppercase;
 
-    background:#0d0d0d;
-
-    border:1px solid rgba(191,149,63,.20);
-
-    border-radius:12px;
-
-    padding:12px 16px;
-
-    box-shadow:0 0 12px rgba(191,149,63,.05);
-
-    transition:.4s ease;
+    animation:titleGlow 4s ease-in-out infinite;
 
 }
-
-/* Layout */
-
-.note-content{
-
-    position:relative;
-
-    z-index:2;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:9px;
-
-}
-
-/* Icon */
 
 .note-icon{
 
-    width:32px;
-
-    height:32px;
-
-    flex-shrink:0;
-
-    border-radius:50%;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    background:linear-gradient(135deg,#bf953f,#f6d676);
-
-    color:#111;
-
-    font-size:40px;
-
-    box-shadow:0 0 10px rgba(191,149,63,.25);
+    color:#bf953f;
+    font-size:15px;
 
     animation:iconFloat 3.5s ease-in-out infinite;
 
 }
 
-/* Title */
-
-.note-title{
-
-    color:#bf953f;
-
-    font-size:11px;
-
-    font-weight:700;
-
-    letter-spacing:1.5px;
-
-    text-transform:uppercase;
-
-    margin-bottom:4px;
-
-}
-
-/* Text */
-
 .note-text{
 
-    color:#bcbcbc;
+    color:#9d9d9d;
 
-    font-size:7px;
+    font-size:13px;
 
-    line-height:1.65;
+    line-height:2;
+
+    font-weight:400;
+
+    text-align:justify;
+
+    text-wrap:balance;
 
 }
 
 .note-text strong{
 
-    color:#fff;
-
-}
-
-.gold-text{
-
-    color:#bf953f;
-
+    color:#ffffff;
     font-weight:600;
 
 }
 
-/* Smooth Reflection */
+/*==========================
+      Light Reflection
+==========================*/
 
 .light-sweep{
 
     position:absolute;
 
-    top:-50%;
+    top:-40%;
 
-    left:0;
+    left:-40%;
 
-    width:38%;
+    width:260px;
 
     height:220%;
 
-    background:
+    background:linear-gradient(
 
-    linear-gradient(
+        115deg,
 
-    110deg,
+        transparent,
 
-    transparent,
+        rgba(255,255,255,.03),
 
-    rgba(255,255,255,.05),
+        rgba(247,214,118,.10),
 
-    rgba(255,223,110,.15),
+        rgba(255,255,255,.03),
 
-    rgba(255,255,255,.05),
-
-    transparent
+        transparent
 
     );
 
-    transform:
+    filter:blur(10px);
 
-    translateX(-220%)
+    transform:rotate(20deg);
 
-    rotate(22deg);
+    animation:sweep 9s linear infinite;
 
-    filter:blur(8px);
-
-    animation:smoothSweep 8s cubic-bezier(.4,0,.2,1) infinite;
+    pointer-events:none;
 
 }
+
+/*==========================
+      Animations
+==========================*/
+
+@keyframes sweep{
+
+0%{
+
+transform:translateX(-300%) rotate(20deg);
+
+}
+
+100%{
+
+transform:translateX(700%) rotate(20deg);
+
+}
+
+}
+
+@keyframes titleGlow{
+
+0%,100%{
+
+text-shadow:none;
+
+}
+
+50%{
+
+text-shadow:
+
+0 0 10px rgba(191,149,63,.40),
+
+0 0 22px rgba(247,214,118,.20);
+
+}
+
+}
+
+@keyframes iconFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-2px);
+
+}
+
+}
+
+/*==========================
+      Desktop
+==========================*/
+
+@media(min-width:1200px){
+
+.note-text{
+
+font-size:13px;
+
+line-height:2.1;
+
+max-width:100%;
+
+}
+
+}
+
+/*==========================
+      Tablet
+==========================*/
+
+@media(max-width:1024px){
+
+.note-title{
+
+font-size:13px;
+
+letter-spacing:3px;
+
+}
+
+.note-text{
+
+font-size:12px;
+
+line-height:1.9;
+
+}
+
+}
+
+/*==========================
+      Mobile
+==========================*/
+
+@media(max-width:768px){
+
+.note-title{
+
+font-size:11px;
+
+letter-spacing:2px;
+
+}
+
+.note-icon{
+
+font-size:13px;
+
+}
+
+.note-text{
+
+font-size:11px;
+
+line-height:1.75;
+
+text-align:left;
+
+}
+
+}
+
+</style>
 
 /* Hover */
 
