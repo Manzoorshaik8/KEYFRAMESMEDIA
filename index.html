@@ -456,82 +456,79 @@ nav::after{
 
     <!-- Ambient Gold Glow -->
 
-    <div style="
-    position:absolute;
-    width:260px;
-    height:260px;
-    border-radius:50%;
-    background:radial-gradient(circle,
-    rgba(191,149,63,.18),
-    transparent 72%);
-    filter:blur(55px);
-    animation:ambientPulse 7s ease-in-out infinite;
-    ">
-    </div>
+<!-- Ambient Left Glow -->
 
-    <!-- Vertical Light Rays -->
+<div class="logo-light left-light"></div>
 
-    <div style="
-    position:absolute;
-    width:12px;
-    height:170px;
-    background:linear-gradient(to top,
-    rgba(191,149,63,.45),
-    transparent);
-    left:48%;
-    bottom:-45px;
-    filter:blur(8px);
-    transform:rotate(-8deg);
-    animation:ray1 6s ease-in-out infinite;
-    "></div>
+<!-- Ambient Right Glow -->
 
-    <div style="
-    position:absolute;
-    width:10px;
-    height:160px;
-    background:linear-gradient(to top,
-    rgba(247,214,118,.40),
-    transparent);
-    left:53%;
-    bottom:-40px;
-    filter:blur(8px);
-    transform:rotate(10deg);
-    animation:ray2 6s ease-in-out infinite;
-    "></div>
+<div class="logo-light right-light"></div>
 
-	<!-- Center Hero Logo -->
+<!-- Vertical Light Rays -->
 
-	<!-- Center Hero Logo -->
+<div style="
+position:absolute;
+width:12px;
+height:170px;
+background:linear-gradient(to top,
+rgba(191,149,63,.45),
+transparent);
+left:48%;
+bottom:-45px;
+filter:blur(8px);
+transform:rotate(-8deg);
+animation:ray1 6s ease-in-out infinite;
+"></div>
 
-	<img
-	    src="logo.png"
-	    alt="Key Frames Media Logo"
-	    class="premium-logo"
-	    style="
-	        width:400px;
-	        height:auto;
-	        object-fit:contain;
-	        animation:
-	            logoFloat 3s ease-in-out infinite,
-	            logoGlow 4s ease-in-out infinite;
-	    ">
-    <!-- Lens Flare -->
+<div style="
+position:absolute;
+width:10px;
+height:160px;
+background:linear-gradient(to top,
+rgba(247,214,118,.40),
+transparent);
+left:53%;
+bottom:-40px;
+filter:blur(8px);
+transform:rotate(10deg);
+animation:ray2 6s ease-in-out infinite;
+"></div>
 
-    <div style="
-    position:absolute;
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    background:
-    radial-gradient(circle,
-    rgba(255,255,255,.65),
-    rgba(247,214,118,.35),
-    transparent 75%);
-    filter:blur(16px);
-    animation:lensFlare 8s linear infinite;
-    mix-blend-mode:screen;
-    ">
-    </div>
+<!-- Center Hero Logo -->
+
+<img
+src="logo.png"
+alt="Key Frames Media Logo"
+class="premium-logo"
+style="
+width:400px;
+height:auto;
+object-fit:contain;
+position:relative;
+z-index:5;
+animation:
+logoFloat 3s ease-in-out infinite,
+logoGlow 2s ease-in-out infinite;
+">
+
+<!-- Lens Flare -->
+
+<div style="
+position:absolute;
+width:120px;
+height:120px;
+border-radius:50%;
+background:
+radial-gradient(circle,
+rgba(255,255,255,.65),
+rgba(247,214,118,.35),
+transparent 75%);
+filter:blur(16px);
+animation:lensFlare 8s linear infinite;
+mix-blend-mode:screen;
+z-index:6;
+">
+</div>
 
 </div>
 
@@ -540,15 +537,11 @@ nav::after{
 @keyframes logoFloat{
 
 0%,100%{
-
 transform:translateY(0);
-
 }
 
 50%{
-
 transform:translateY(-6px);
-
 }
 
 }
@@ -558,35 +551,143 @@ transform:translateY(-6px);
 0%,100%{
 
 filter:
-drop-shadow(0 0 8px rgba(191,149,63,.18));
+drop-shadow(0 0 8px rgba(191,149,63,.20));
 
 }
 
 50%{
 
 filter:
-drop-shadow(0 0 18px rgba(191,149,63,.45))
-drop-shadow(0 0 30px rgba(247,214,118,.25));
+drop-shadow(0 0 25px rgba(191,149,63,.60))
+drop-shadow(0 0 45px rgba(247,214,118,.35));
 
 }
 
 }
 
-@keyframes ambientPulse{
+/* ===============================
+LEFT & RIGHT MOVING GLOW
+=============================== */
 
-0%,100%{
+.logo-light{
 
-transform:scale(1);
+position:absolute;
 
-opacity:.45;
+width:220px;
+height:220px;
+
+border-radius:50%;
+
+background:
+radial-gradient(circle,
+rgba(255,235,170,.95),
+rgba(247,214,118,.60),
+rgba(191,149,63,.30),
+transparent 75%);
+
+filter:blur(45px);
+
+pointer-events:none;
+
+mix-blend-mode:screen;
+
+opacity:0;
+
+z-index:1;
+
+}
+
+.left-light{
+
+left:-260px;
+
+animation:leftGlow 7s ease-in-out infinite;
+
+}
+
+.right-light{
+
+right:-260px;
+
+animation:rightGlow 7s ease-in-out infinite;
+
+}
+
+@keyframes leftGlow{
+
+0%{
+
+left:-260px;
+opacity:0;
+transform:scale(.7);
+
+}
+
+20%{
+
+opacity:.55;
 
 }
 
 50%{
 
-transform:scale(1.15);
+left:50%;
+transform:translateX(-50%) scale(1.7);
+opacity:1;
 
-opacity:.65;
+}
+
+80%{
+
+opacity:.45;
+
+}
+
+100%{
+
+left:120%;
+opacity:0;
+transform:translateX(-50%) scale(.8);
+
+}
+
+}
+
+@keyframes rightGlow{
+
+0%{
+
+right:-260px;
+opacity:0;
+transform:scale(.7);
+
+}
+
+20%{
+
+opacity:.55;
+
+}
+
+50%{
+
+right:50%;
+transform:translateX(50%) scale(1.7);
+opacity:1;
+
+}
+
+80%{
+
+opacity:.45;
+
+}
+
+100%{
+
+right:120%;
+opacity:0;
+transform:translateX(50%) scale(.8);
 
 }
 
@@ -645,10 +746,8 @@ rotate(6deg);
 0%{
 
 left:-140px;
-
 top:20px;
-
-opacity:10;
+opacity:0;
 
 }
 
@@ -673,14 +772,84 @@ opacity:.35;
 100%{
 
 left:220px;
-
 top:-20px;
-
 opacity:0;
 
 }
 
 }
+
+/* ===============================
+TABLET
+=============================== */
+
+@media(max-width:1024px){
+
+.logo-light{
+
+width:170px;
+height:170px;
+
+filter:blur(35px);
+
+}
+
+.left-light{
+
+left:-180px;
+
+}
+
+.right-light{
+
+right:-180px;
+
+}
+
+.premium-logo{
+
+width:320px !important;
+
+}
+
+}
+
+/* ===============================
+MOBILE
+=============================== */
+
+@media(max-width:768px){
+
+.logo-light{
+
+width:120px;
+height:120px;
+
+filter:blur(25px);
+
+}
+
+.left-light{
+
+left:-120px;
+
+}
+
+.right-light{
+
+right:-120px;
+
+}
+
+.premium-logo{
+
+width:240px !important;
+
+}
+
+}
+
+</style>
 
 </style>
             
