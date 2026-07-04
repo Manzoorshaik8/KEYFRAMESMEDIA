@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KEY FRAMES MEDIA | Video Marketing Hyderabad</title>
-    <!-- Tailwind CSSs CDN -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Google Fonts: Inter & Playfair Display for premium look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -456,29 +456,13 @@ nav::after{
 
  
 
-<!-- Ambient Left Moving Glow -->
+<!-- Ambient Left Glow -->
 
 <div class="logo-light left-light"></div>
 
-<!-- Ambient Right Moving Glow -->
+<!-- Ambient Right Glow -->
 
 <div class="logo-light right-light"></div>
-
-<!-- Ambient Gold Glow -->
-
-<div style="
-position:absolute;
-width:260px;
-height:260px;
-border-radius:50%;
-background:
-radial-gradient(circle,
-rgba(191,149,63,.18),
-transparent 72%);
-filter:blur(55px);
-animation:ambientPulse 20s ease-in-out infinite;
-">
-</div>
 
 <!-- Vertical Light Rays -->
 
@@ -553,15 +537,11 @@ z-index:6;
 @keyframes logoFloat{
 
 0%,100%{
-
 transform:translateY(0);
-
 }
 
 50%{
-
 transform:translateY(-6px);
-
 }
 
 }
@@ -571,307 +551,326 @@ transform:translateY(-6px);
 0%,100%{
 
 filter:
-drop-shadow(0 0 8px rgba(191,149,63,.18));
+drop-shadow(0 0 8px rgba(191,149,63,.20));
 
 }
 
 50%{
 
 filter:
-drop-shadow(0 0 18px rgba(191,149,63,.45))
-drop-shadow(0 0 30px rgba(247,214,118,.25));
+drop-shadow(0 0 25px rgba(191,149,63,.60))
+drop-shadow(0 0 45px rgba(247,214,118,.35));
 
 }
 
 }
+/*==================================
+      IMPORTANT NOTE
+==================================*/
 
-@keyframes ambientPulse{
+.note-title{
 
-0%,100%{
+    color:#ffffff;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:4px;
+    text-transform:uppercase;
 
-transform:scale(1);
-
-opacity:.45;
-
-}
-
-50%{
-
-transform:scale(1.15);
-
-opacity:.65;
+    animation:titleGlow 4s ease-in-out infinite;
 
 }
 
-}
+.note-icon{
 
-/* ===============================
-LEFT & RIGHT MOVING GLOW
-=============================== */
+    color:#bf953f;
+    font-size:15px;
 
-.logo-light{
-
-position:absolute;
-
-width:220px;
-height:220px;
-
-border-radius:50%;
-
-background:
-radial-gradient(circle,
-rgba(255,245,190,.95),
-rgba(247,214,118,.60),
-rgba(191,149,63,.30),
-transparent 75%);
-
-filter:blur(45px);
-
-pointer-events:none;
-
-mix-blend-mode:screen;
-
-opacity:0;
-
-z-index:1;
+    animation:iconFloat 3.5s ease-in-out infinite;
 
 }
 
-.left-light{
+.note-text{
 
-left:-240px;
+    color:#9d9d9d;
 
-animation:leftGlow 8s ease-in-out infinite;
+    font-size:13px;
+
+    line-height:2;
+
+    font-weight:400;
+
+    text-align:justify;
+
+    text-wrap:balance;
 
 }
 
-.right-light{
+.note-text strong{
 
-right:-240px;
-
-animation:rightGlow 8s ease-in-out infinite;
+    color:#ffffff;
+    font-weight:600;
 
 }
 
-@keyframes leftGlow{
+/*==========================
+      Light Reflection
+==========================*/
+
+.light-sweep{
+
+    position:absolute;
+
+    top:-40%;
+
+    left:-40%;
+
+    width:260px;
+
+    height:220%;
+
+    background:linear-gradient(
+
+        115deg,
+
+        transparent,
+
+        rgba(255,255,255,.03),
+
+        rgba(247,214,118,.10),
+
+        rgba(255,255,255,.03),
+
+        transparent
+
+    );
+
+    filter:blur(10px);
+
+    transform:rotate(20deg);
+
+    animation:sweep 9s linear infinite;
+
+    pointer-events:none;
+
+}
+
+/*==========================
+      Animations
+==========================*/
+
+@keyframes sweep{
 
 0%{
 
-left:-240px;
-opacity:0;
-transform:scale(.7);
-
-}
-
-20%{
-
-opacity:.45;
-
-}
-
-50%{
-
-left:50%;
-transform:translateX(-50%) scale(1.6);
-opacity:.95;
-
-}
-
-80%{
-
-opacity:.45;
+transform:translateX(-300%) rotate(20deg);
 
 }
 
 100%{
 
-left:120%;
-opacity:0;
-transform:translateX(-50%) scale(.8);
+transform:translateX(700%) rotate(20deg);
 
 }
 
 }
 
-@keyframes rightGlow{
-
-0%{
-
-right:-240px;
-opacity:0;
-transform:scale(.7);
-
-}
-
-20%{
-
-opacity:.45;
-
-}
-
-50%{
-
-right:50%;
-transform:translateX(50%) scale(1.6);
-opacity:.95;
-
-}
-
-80%{
-
-opacity:.45;
-
-}
-
-100%{
-
-right:120%;
-opacity:0;
-transform:translateX(50%) scale(.8);
-
-}
-
-}
-
-@keyframes ray1{
+@keyframes titleGlow{
 
 0%,100%{
 
-opacity:.15;
-
-transform:
-translateY(10px)
-rotate(-8deg);
+text-shadow:none;
 
 }
 
 50%{
 
-opacity:.5;
+text-shadow:
 
-transform:
-translateY(-10px)
-rotate(-5deg);
+0 0 10px rgba(191,149,63,.40),
 
-}
+0 0 22px rgba(247,214,118,.20);
 
 }
 
-@keyframes ray2{
+}
+
+@keyframes iconFloat{
 
 0%,100%{
 
-opacity:.12;
-
-transform:
-translateY(8px)
-rotate(10deg);
+transform:translateY(0);
 
 }
 
 50%{
 
-opacity:.45;
-
-transform:
-translateY(-12px)
-rotate(6deg);
+transform:translateY(-2px);
 
 }
 
 }
 
-@keyframes lensFlare{
+/*==========================
+      Desktop
+==========================*/
 
-0%{
+@media(min-width:1200px){
 
-left:-140px;
-top:20px;
-opacity:0;
+.note-text{
 
-}
+font-size:13px;
 
-15%{
+line-height:2.1;
 
-opacity:.45;
-
-}
-
-50%{
-
-opacity:.75;
-
-}
-
-85%{
-
-opacity:.35;
-
-}
-
-100%{
-
-left:220px;
-top:-20px;
-opacity:0;
+max-width:100%;
 
 }
 
 }
 
-/* ===============================
-TABLET
-(No logo size changed)
-=============================== */
+/*==========================
+      Tablet
+==========================*/
 
 @media(max-width:1024px){
 
-.logo-light{
+.note-title{
 
-width:170px;
-height:170px;
-filter:blur(35px);
+font-size:13px;
 
-}
-
-.left-light{
-
-left:-180px;
+letter-spacing:3px;
 
 }
 
-.right-light{
+.note-text{
 
-right:-180px;
+font-size:12px;
+
+line-height:1.9;
 
 }
 
 }
 
-/* ===============================
-MOBILE
-(No logo size changed)
-=============================== */
+/*==========================
+      Mobile
+==========================*/
 
 @media(max-width:768px){
 
-.logo-light{
+.note-title{
 
-width:120px;
-height:120px;
-filter:blur(25px);
+font-size:11px;
 
-}
-
-.left-light{
-
-left:-120px;
+letter-spacing:2px;
 
 }
 
-.right-light{
+.note-icon{
 
-right:-120px;
+font-size:13px;
+
+}
+
+.note-text{
+
+font-size:11px;
+
+line-height:1.75;
+
+text-align:left;
+
+}
+
+}
+
+
+
+/* Hover */
+
+.important-note:hover{
+
+    transform:translateY(-2px);
+
+    border-color:#bf953f;
+
+    box-shadow:
+
+    0 8px 22px rgba(191,149,63,.14);
+
+}
+
+/* Animations */
+
+@keyframes smoothSweep{
+
+    0%,15%{
+
+        transform:translateX(-220%) rotate(22deg);
+
+    }
+
+    55%{
+
+        transform:translateX(320%) rotate(22deg);
+
+    }
+
+    100%{
+
+        transform:translateX(320%) rotate(22deg);
+
+    }
+
+}
+
+@keyframes iconFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-2px);
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.note-content{
+
+gap:10px;
+
+}
+
+.note-icon{
+
+width:28px;
+
+height:28px;
+
+font-size:12px;
+
+}
+
+.note-title{
+
+font-size:10px;
+
+}
+
+.note-text{
+
+font-size:11px;
+
+line-height:1.55;
 
 }
 
