@@ -1761,7 +1761,7 @@ opacity:0;
 
     text-align:justify;
 
-    text-wrap:balance;
+    text-wrap: balance;
 
 }
 
@@ -1913,40 +1913,8 @@ line-height:1.9;
 }
 
 /*==========================
-      Mobile
+      Hover
 ==========================*/
-
-@media(max-width:768px){
-
-.note-title{
-
-font-size:11px;
-
-letter-spacing:2px;
-
-}
-
-.note-icon{
-
-font-size:13px;
-
-}
-
-.note-text{
-
-font-size:11px;
-
-line-height:1.75;
-
-text-align:left;
-
-}
-
-}
-
-
-
-/* Hover */
 
 .important-note:hover{
 
@@ -1960,69 +1928,67 @@ text-align:left;
 
 }
 
-/* Animations */
+/*==========================
+      Smooth Sweep
+==========================*/
 
 @keyframes smoothSweep{
 
-    0%,15%{
+0%,15%{
 
-        transform:translateX(-220%) rotate(22deg);
-
-    }
-
-    55%{
-
-        transform:translateX(320%) rotate(22deg);
-
-    }
-
-    100%{
-
-        transform:translateX(320%) rotate(22deg);
-
-    }
+transform:translateX(-220%) rotate(22deg);
 
 }
 
-@keyframes iconFloat{
+55%{
 
-    0%,100%{
-
-        transform:translateY(0);
-
-    }
-
-    50%{
-
-        transform:translateY(-2px);
-
-    }
+transform:translateX(320%) rotate(22deg);
 
 }
 
-/* Mobile */
+100%{
+
+transform:translateX(320%) rotate(22deg);
+
+}
+
+}
+
+/*==========================
+      Mobile
+==========================*/
 
 @media(max-width:768px){
 
-.note-content{
-
-gap:10px;
-
-}
-
 .note-icon{
 
-width:28px;
+    width:28px;
 
-height:28px;
+    height:28px;
 
-font-size:12px;
+    min-width:28px;
+
+    min-height:28px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:20px;
+
+    margin-top:3px;   /* Move icon slightly down */
+
+}
 
 }
 
 .note-title{
 
 font-size:10px;
+
+letter-spacing:2px;
 
 }
 
@@ -2032,10 +1998,12 @@ font-size:11px;
 
 line-height:1.55;
 
-}
+text-align:left;
 
 }
 
+} 
+  
 </style>
     </section>
 
