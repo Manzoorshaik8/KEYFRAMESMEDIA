@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Fontwesome for Premium Icons -->
+    <!-- FontAwesome for Premium Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Cleaned page styles: base layout, responsive rules, and original animations. -->
     <style>
@@ -1169,7 +1169,7 @@
         .brand-logo-footer{
             width:160px;
             margin-top:6px;
-            margin-bottom:-27px;
+            margin-bottom:-38px;
             top:0;
         }
         .footer-title{
@@ -1483,6 +1483,65 @@
             }
         }
 
+        /* ==========================================
+           WHATSAPP FLOATING BUTTON (Premium)
+        ========================================== */
+        .whatsapp-float {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: #fff;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45), 0 0 0 0 rgba(37, 211, 102, 0.6);
+            z-index: 9999;
+            animation: whatsappPulse 2.6s ease-in-out infinite;
+            transition: transform .3s ease, box-shadow .3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.5), 0 0 25px rgba(37, 211, 102, 0.55);
+        }
+        .whatsapp-float i {
+            animation: whatsappIconFloat 3s ease-in-out infinite;
+        }
+        @keyframes whatsappPulse {
+            0% {
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45), 0 0 0 0 rgba(37, 211, 102, 0.55);
+            }
+            60% {
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45), 0 0 0 16px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45), 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+        @keyframes whatsappIconFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-2px);
+            }
+        }
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                right: 16px;
+                bottom: 16px;
+                width: 52px;
+                height: 52px;
+                font-size: 26px;
+            }
+        }
+
     </style>
 </head>
 <body class="antialiased selection:bg-[#bf953f] selection:text-black">
@@ -1505,10 +1564,10 @@
 	            </div>
 	            <!-- Right -->
 	            <div class="mt-1 lg:mt-0">
-	                <a href="tel:+910000000000"
+	                <a href="tel:+918885086660"
 	                   class="flex items-center whitespace-nowrap text-[9px] sm:text-[10px] lg:text-[11px] tracking-wide text-zinc-300 hover:text-white transition">
 	                    <i class="fa-solid fa-phone text-[#bf953f] mr-1"></i>
-	                    +91 00000 00000
+	                    +91 8885086660
 	                </a>
 	            </div>
 	        </div>
@@ -1524,7 +1583,7 @@
 	      <div class="flex items-center justify-start flex-shrink-0 group cursor-pointer pt-2 lg:-ml-10">
                 <!-- Branding Logo -->
 				<img
-				src="logo.png"
+				src="/images/logo.png"
 				alt="Key Frames Media Logo"
 				class="brand-logo-nav premium-logo">     </div>
 <div class="hidden lg:flex items-center gap-5 xl:gap-6 text-[14px] font-medium">                <a href="#retainers" class="hover:text-[#bf953f] transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-[#bf953f] hover:after:w-full after:transition-all">Production Plans</a>
@@ -1563,7 +1622,7 @@
 <!-- Top and side stage lights -->
 <!-- Center Hero Logo -->
 <img
-src="logo.png"
+src="/images/logo.png"
 alt="Key Frames Media Logo"
 class="premium-logo"
 style="
@@ -3045,7 +3104,7 @@ z-index:6;
                 With <span class="text-white font-semibold">6+ Years of Professional Industry Experience</span>,
                 specializing in <span class="text-[#bf953f]">cinematography, photography,
                 professional video editing, brand storytelling, commercial productions,
-                corporate films, digital marketing visuals and creative direction.Turning passion into visuals</span>
+                corporate films, digital marketing visuals and creative direction.</span>
                 Every project is crafted with a cinematic approach,
                 premium production quality and attention to detail,
                 ensuring every brand stands out with powerful visual storytelling.
@@ -3130,10 +3189,10 @@ z-index:6;
                     <span class="text-[10px] uppercase text-zinc-500 tracking-wider">Official Email </span>
                     <span class="text-sm font-semibold text-white">keyframesmedia6660@gmail.com</span>
                 </a>
-                <a href="tel:000000000" class="p-6 rounded-xl bg-zinc-950 border border-zinc-900 hover:border-[#bf953f]/40 group transition-all flex flex-col items-center gap-2">
+                <a href="tel:8885086660" class="p-6 rounded-xl bg-zinc-950 border border-zinc-900 hover:border-[#bf953f]/40 group transition-all flex flex-col items-center gap-2">
                     <i class="fa-solid fa-phone text-xl text-[#bf953f] group-hover:scale-110 transition-transform"></i>
                     <span class="text-[10px] uppercase text-zinc-500 tracking-wider">Executive Direct Mobile</span>
-                    <span class="text-sm font-semibold text-white">cell 000000000</span>
+                    <span class="text-sm font-semibold text-white">cell 8885086660</span>
                 </a>
             </div>
         </div>
@@ -3157,12 +3216,14 @@ CUSTOM QUOTE SECTION
             </p>
         </div>
         <div class="premium-card rounded-none md:rounded-3xl p-8 md:p-10 w-full">
-            <form class="grid md:grid-cols-2 gap-6">
+            <form id="quoteForm" class="grid md:grid-cols-2 gap-6" novalidate>
                 <div>
                     <label class="block text-sm text-zinc-400 mb-2">
                         Full Name
                     </label>
                     <input type="text"
+                    id="fullName"
+                    name="fullName"
                     placeholder="Enter your name"
                     class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none transition">
                 </div>
@@ -3171,6 +3232,8 @@ CUSTOM QUOTE SECTION
                         Phone Number
                     </label>
                     <input type="tel"
+                    id="phoneNumber"
+                    name="phoneNumber"
                     placeholder="+91 XXXXX XXXXX"
                     class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none transition">
                 </div>
@@ -3179,6 +3242,8 @@ CUSTOM QUOTE SECTION
                         Event / Business Name
                     </label>
                     <input type="text"
+                    id="businessName"
+                    name="businessName"
                     placeholder="corporate/ Restaurant / Brand/ business"
                     class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none transition">
                 </div>
@@ -3186,7 +3251,7 @@ CUSTOM QUOTE SECTION
                     <label class="block text-sm text-zinc-400 mb-2">
                         Preferred Package
                     </label>
-                    <select class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none">
+                    <select id="preferredPackage" name="preferredPackage" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none">
                         <option>Select Package</option>
                         <option>Phase 01 - Starter</option>
                         <option>Phase 02 - Growth</option>
@@ -3200,7 +3265,7 @@ CUSTOM QUOTE SECTION
                     <label class="block text-sm text-zinc-400 mb-2">
                         Estimated Budget
                     </label>
-                    <select class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none">
+                    <select id="estimatedBudget" name="estimatedBudget" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none">
                         <option>Select Budget</option>
                         <option>Below ₹25,000</option>
                         <option>₹25,000 - ₹50,000</option>
@@ -3214,6 +3279,8 @@ CUSTOM QUOTE SECTION
     </label>
     <input
         type="date"
+        id="eventDate"
+        name="eventDate"
         class="w-full h-[56px] bg-zinc-900 border border-zinc-800 rounded-xl px-5 text-white appearance-none focus:border-[#bf953f] outline-none transition">
 </div>
                 <div class="md:col-span-2">
@@ -3221,11 +3288,15 @@ CUSTOM QUOTE SECTION
                         Project Requirements
                     </label>
                     <textarea rows="5"
+                    id="projectRequirements"
+                    name="projectRequirements"
                     placeholder="Tell us about your project..."
                     class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 text-white focus:border-[#bf953f] outline-none resize-none"></textarea>
                 </div>
+                <div id="quoteFormError" class="md:col-span-2 hidden rounded-xl border border-red-500/30 bg-red-500/10 text-red-300 text-sm px-5 py-3 text-center"></div>
                 <div class="md:col-span-2 text-center mt-4">
                     <button
+                    id="quoteSubmitBtn"
                     type="submit"
                     class="shimmer-btn bg-gradient-to-r from-[#bf953f] via-[#d9b55f] to-[#bf953f] text-black font-bold tracking-wider px-10 py-4 rounded-full transition hover:scale-105">
                         <i class="fa-solid fa-paper-plane mr-2"></i>
@@ -3241,7 +3312,7 @@ CUSTOM QUOTE SECTION
 <div class="max-w-5xl mx-auto px-6 py-2 text-center flex flex-col items-center">
         <!-- Logo -->
         <img
-            src="logo.png"
+            src="/images/logo.png"
             alt="Key Frames Media Logo"
             class="brand-logo-footer">
         <!-- Company -->
@@ -3320,6 +3391,136 @@ CUSTOM QUOTE SECTION
                 }, index * 180);
             });
         }, 9000);
+
+        // ==========================================
+        // WHATSAPP FLOATING BUTTON + CUSTOM QUOTE FORM
+        // ==========================================
+        (function () {
+            const whatsappNumber = "918885086660";
+
+            function showFormError(message) {
+                const errorBox = document.getElementById("quoteFormError");
+                if (!errorBox) return;
+                errorBox.textContent = message;
+                errorBox.classList.remove("hidden");
+            }
+
+            function clearFormError() {
+                const errorBox = document.getElementById("quoteFormError");
+                if (!errorBox) return;
+                errorBox.textContent = "";
+                errorBox.classList.add("hidden");
+            }
+
+            // Accepts "9876543210", "+91 9876543210", "91 9876543210", with spaces/dashes.
+            function isValidIndianMobile(rawValue) {
+                const digitsOnly = rawValue.replace(/[^\d]/g, "");
+                let normalized = digitsOnly;
+                if (normalized.length === 12 && normalized.startsWith("91")) {
+                    normalized = normalized.slice(2);
+                } else if (normalized.length === 11 && normalized.startsWith("0")) {
+                    normalized = normalized.slice(1);
+                }
+                return /^[6-9]\d{9}$/.test(normalized);
+            }
+
+            function normalizeIndianMobile(rawValue) {
+                const digitsOnly = rawValue.replace(/[^\d]/g, "");
+                let normalized = digitsOnly;
+                if (normalized.length === 12 && normalized.startsWith("91")) {
+                    normalized = normalized.slice(2);
+                } else if (normalized.length === 11 && normalized.startsWith("0")) {
+                    normalized = normalized.slice(1);
+                }
+                return normalized;
+            }
+
+            const quoteForm = document.getElementById("quoteForm");
+            if (quoteForm) {
+                quoteForm.addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    clearFormError();
+
+                    const fullNameEl = document.getElementById("fullName");
+                    const phoneNumberEl = document.getElementById("phoneNumber");
+                    const businessNameEl = document.getElementById("businessName");
+                    const preferredPackageEl = document.getElementById("preferredPackage");
+                    const estimatedBudgetEl = document.getElementById("estimatedBudget");
+                    const eventDateEl = document.getElementById("eventDate");
+                    const projectRequirementsEl = document.getElementById("projectRequirements");
+
+                    const fullName = (fullNameEl && fullNameEl.value || "").trim();
+                    const phoneNumber = (phoneNumberEl && phoneNumberEl.value || "").trim();
+                    const businessName = (businessNameEl && businessNameEl.value || "").trim();
+                    const preferredPackage = (preferredPackageEl && preferredPackageEl.value || "").trim();
+                    const estimatedBudget = (estimatedBudgetEl && estimatedBudgetEl.value || "").trim();
+                    const eventDate = (eventDateEl && eventDateEl.value || "").trim();
+                    const projectRequirements = (projectRequirementsEl && projectRequirementsEl.value || "").trim();
+
+                    if (!fullName) {
+                        showFormError("Please enter your full name.");
+                        fullNameEl && fullNameEl.focus();
+                        return;
+                    }
+                    if (!phoneNumber) {
+                        showFormError("Please enter your phone number.");
+                        phoneNumberEl && phoneNumberEl.focus();
+                        return;
+                    }
+                    if (!isValidIndianMobile(phoneNumber)) {
+                        showFormError("Please enter a valid Indian mobile number.");
+                        phoneNumberEl && phoneNumberEl.focus();
+                        return;
+                    }
+                    if (!businessName) {
+                        showFormError("Please enter your event or business name.");
+                        businessNameEl && businessNameEl.focus();
+                        return;
+                    }
+                    if (!preferredPackage || preferredPackage === "Select Package") {
+                        showFormError("Please select a preferred package.");
+                        preferredPackageEl && preferredPackageEl.focus();
+                        return;
+                    }
+                    if (!estimatedBudget || estimatedBudget === "Select Budget") {
+                        showFormError("Please select your estimated budget.");
+                        estimatedBudgetEl && estimatedBudgetEl.focus();
+                        return;
+                    }
+
+                    clearFormError();
+
+                    const normalizedPhone = normalizeIndianMobile(phoneNumber);
+                    const displayPhone = "+91 " + normalizedPhone;
+
+                    const message =
+                        "🔥 NEW CUSTOM OFFER REQUEST\n" +
+                        "━━━━━━━━━━━━━━━━━━\n\n" +
+                        "👤 Full Name:\n" + fullName + "\n\n" +
+                        "📱 Phone Number:\n" + displayPhone + "\n\n" +
+                        "🏢 Event / Business:\n" + businessName + "\n\n" +
+                        "📦 Preferred Package:\n" + preferredPackage + "\n\n" +
+                        "💰 Estimated Budget:\n" + estimatedBudget + "\n\n" +
+                        "📅 Event Date:\n" + (eventDate || "Not specified") + "\n\n" +
+                        "📝 Project Requirements:\n" + (projectRequirements || "Not specified") + "\n\n" +
+                        "━━━━━━━━━━━━━━━━━━\n\n" +
+                        "🌐 Source: Key Frames Media Website\n\n" +
+                        "Please contact this customer regarding their custom offer request.";
+
+                    const whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+                    window.open(whatsappURL, "_blank");
+                });
+            }
+        })();
     </script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918885086660?text=Hello%20Key%20Frames%20Media%2C%20I%20would%20like%20to%20know%20more%20about%20your%20video%20marketing%20and%20creative%20services."
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Chat with Key Frames Media on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 </body>
 </html>
